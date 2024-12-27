@@ -1,0 +1,70 @@
+.navbar {
+  @apply tw-fixed;
+  @apply tw-top-0;
+  @apply tw-left-0;
+  @apply tw-right-0;
+  @apply tw-z-50;
+
+  @apply tw-bg-opacity-0;
+
+  @apply tw-flex;
+  @apply tw-justify-between;
+  @apply tw-items-center;
+
+  @apply tw-py-4;
+  @apply tw-px-8;
+
+  @apply tw-transition-all;
+  @apply tw-duration-500;
+
+  @apply md:tw-px-16;
+}
+
+.nav-active {
+  @apply tw-flex;
+  @apply tw-bg-white-50;
+  @apply tw-bg-opacity-80;
+
+  @apply tw-top-0;
+}
+
+.nav-inactive {
+  @apply tw-hidden;
+  @apply tw-bg-opacity-0;
+  @apply tw-top-[-20px];
+}
+
+.list {
+  @apply tw-hidden;
+  @apply tw-gap-4;
+
+  @apply md:tw-flex;
+  @apply md:tw-items-center;
+  @apply md:tw-justify-center;
+  @apply md:tw-gap-16;
+}
+
+.list-item {
+  @apply tw-cursor-pointer;
+  @apply tw-transition;
+  @apply tw-duration-200;
+  @apply tw-ease-in-out;
+
+  @apply tw-text-white-400;
+  @apply tw-font-semibold;
+
+  @apply hover:tw-text-white-950;
+}
+
+.list-active {
+  @apply tw-text-black;
+}
+
+.btn-group {
+  @apply tw-flex;
+  @apply tw-gap-4;
+}
+
+.logo {
+  @apply tw-w-10;
+}

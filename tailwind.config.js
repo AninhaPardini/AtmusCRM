@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   prefix: 'tw-',
-  important: true,
+  important: false,
   content: [],
   theme: {
     extend: {
@@ -31,6 +31,19 @@ module.exports = {
           800: '#A80953',
           900: '#8F0C4D',
           950: '#500126',
+        },
+        white: {
+          50: '#fcfcfc',
+          100: '#efefef',
+          200: '#dcdcdc',
+          300: '#bdbdbd',
+          400: '#989898',
+          500: '#7c7c7c',
+          600: '#656565',
+          700: '#525252',
+          800: '#464646',
+          900: '#3d3d3d',
+          950: '#292929',
         },
       },
       fontFamily: {

@@ -1,14 +1,34 @@
-<nav>
-  <img src="../../../../public/logo-extended.png" alt="Logo extendida Atmus CRM">
-  <ul>
-    <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
-    <li><a routerLink="/clients" routerLinkActive="active">Clientes</a></li>
-    <li><a routerLink="/products" routerLinkActive="active">Productos</a></li>
-    <li><a routerLink="/sales" routerLinkActive="active">Ventas</a></li>
-    <li><a routerLink="/reports" routerLinkActive="active">Reportes</a></li>
+<nav class="navbar" [ngClass]="isVisible ? 'nav-inactive' : 'nav-active'">
+  <img src="/logo.svg" alt="Logo Atmus CRM" class="logo responsive-only"/>
+  <img src="/logo-extended.svg" alt="Logo extendida Atmus CRM" class="desktop-only"/>
+  <ul class="list">
+    <li>
+      <a
+        routerLink="/home"
+        routerLinkActive="active"
+        class="list-active list-item"
+      >
+        Inicial
+      </a>
+    </li>
+    <li>
+      <a routerLink="/clients" routerLinkActive="active" class="list-item">
+        Integrações
+      </a>
+    </li>
+    <li>
+      <a routerLink="/clients" routerLinkActive="active" class="list-item">
+        Planos
+      </a>
+    </li>
   </ul>
-  <button>
-    <a routerLink="/login" routerLinkActive="active">Login</a>
-  </button>
+  <div class="btn-group">
+    <button class="btn-primary">Teste por 7 dias</button>
+    <button class="btn-secondary">
+      <a routerLink="/login" routerLinkActive="active">
+        <i class="bx bx-user"></i> 
+        Login 
+      </a>
+    </button>
+  </div>
 </nav>
-

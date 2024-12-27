@@ -2,6 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
+.responsive-only {
+  @apply tw-flex;
+  @apply md:tw-hidden;
+}
+
+.desktop-only {
+  @apply tw-hidden;
+  @apply md:tw-flex;
+}
+
 .btn-primary {
-  @aply --btn-primary;
+  @apply tw-bg-pink-500 tw-text-pink-50;
+  @apply hover:tw-bg-opacity-0;
+
+  @apply tw-px-4 tw-py-2;
+  @apply tw-justify-center;
+  @apply tw-items-center;
+  @apply tw-gap-2;
+
+  @apply tw-font-semibold;
+  @apply hover:tw-text-pink-500;
+
+  @apply tw-border-pink-600;
+  @apply tw-border-2;
+  @apply tw-rounded-md;
+}
+
+.btn-secondary {
+  @apply tw-text-pink-600;
+  @apply hover:tw-bg-pink-600;
+
+  @apply tw-px-4 tw-py-2;
+  @apply tw-justify-center;
+  @apply tw-items-center;
+  @apply tw-gap-2;
+
+  @apply tw-font-semibold;
+  @apply hover:tw-text-pink-50;
+
+  @apply tw-border-pink-500;
+  @apply tw-border-2;
+  @apply tw-rounded-md;
 }
