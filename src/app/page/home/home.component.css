@@ -19,7 +19,7 @@
 }
 
 .header div h1 {
-  @apply tw-text-2xl;
+  @apply tw-text-lg;
   @apply tw-font-bold;
   @apply tw-text-gray-900;
 
@@ -30,7 +30,7 @@
 
 .header div h1 span {
   @apply tw-text-pink-500;
-  @apply tw-text-6xl;
+  @apply tw-text-5xl;
   @apply tw-text-center;
 }
 
@@ -39,23 +39,21 @@
   @apply tw-text-gray-700;
 }
 
-.header .image-and-icons img {
-  @apply md:tw-max-w-md;
-  @apply tw-max-w-[448px];
-}
-
 .header .image-and-icons {
   @apply tw-relative;
 }
 
 .header .image-and-icons .main-example {
   @apply tw-relative;
+
+  @apply tw-max-w-[380px];
+  @apply md:tw-max-w-md;
 }
 
 .header .image-and-icons .whats {
   @apply tw-absolute;
   @apply tw-top-[-10px];
-  @apply tw-left-[-30px];
+  @apply tw-left-[-10px];
 
   @apply tw-w-16;
 }
@@ -71,7 +69,7 @@
 .header .image-and-icons .insta {
   @apply tw-absolute;
   @apply tw-top-[164px];
-  @apply tw-right-[0px];
+  @apply tw-right-[10px];
 
   @apply tw-w-14;
 }
@@ -79,7 +77,7 @@
 .header .image-and-icons .face {
   @apply tw-absolute;
   @apply tw-top-[224px];
-  @apply tw-right-[-44px];
+  @apply tw-right-[-16px];
 
   @apply tw-w-16;
 }
@@ -87,7 +85,7 @@
 .header .image-and-icons .meta {
   @apply tw-absolute;
   @apply tw-top-[300px];
-  @apply tw-right-[-30px];
+  @apply tw-right-[10px];
 
   @apply tw-w-16;
 }
