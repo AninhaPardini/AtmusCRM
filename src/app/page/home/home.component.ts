@@ -1,11 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'atm-home',
-  imports: [],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  styleUrls: ['./home.component.css']
 })
-export class HomeComponent {
-
+export class HomeComponent implements OnInit {
+  ngOnInit() {
+    document.addEventListener('DOMContentLoaded', function() {
+      const carouselTrack = document.querySelector('.carousel-track');
+      if (carouselTrack) {
+        const clone = carouselTrack.innerHTML;
+        carouselTrack.innerHTML += clone;
+      }
+    });
+  }
 }

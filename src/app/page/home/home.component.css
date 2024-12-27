@@ -1,0 +1,120 @@
+.header {
+  @apply tw-flex;
+  @apply tw-flex-col;
+  @apply tw-items-center;
+  @apply tw-justify-start;
+
+  @apply tw-gap-32;
+
+  @apply tw-pt-56;
+  @apply tw-mb-12;
+}
+
+.header div {
+  @apply tw-flex;
+  @apply tw-flex-col;
+  @apply tw-items-center;
+  @apply tw-justify-center;
+  @apply tw-gap-4;
+}
+
+.header div h1 {
+  @apply tw-text-2xl;
+  @apply tw-font-bold;
+  @apply tw-text-gray-900;
+
+  @apply tw-items-center;
+  @apply tw-justify-center;
+  @apply tw-text-center;
+}
+
+.header div h1 span {
+  @apply tw-text-pink-500;
+  @apply tw-text-6xl;
+  @apply tw-text-center;
+}
+
+.header div p {
+  @apply tw-text-lg;
+  @apply tw-text-gray-700;
+}
+
+.header .image-and-icons img {
+  @apply md:tw-max-w-md;
+  @apply tw-max-w-[448px];
+}
+
+.header .image-and-icons {
+  @apply tw-relative;
+}
+
+.header .image-and-icons .main-example {
+  @apply tw-relative;
+}
+
+.header .image-and-icons .whats {
+  @apply tw-absolute;
+  @apply tw-top-[-10px];
+  @apply tw-left-[-30px];
+
+  @apply tw-w-16;
+}
+
+.header .image-and-icons .google {
+  @apply tw-absolute;
+  @apply tw-top-[70px];
+  @apply tw-left-[10px];
+
+  @apply tw-w-14;
+}
+
+.header .image-and-icons .insta {
+  @apply tw-absolute;
+  @apply tw-top-[164px];
+  @apply tw-right-[0px];
+
+  @apply tw-w-14;
+}
+
+.header .image-and-icons .face {
+  @apply tw-absolute;
+  @apply tw-top-[224px];
+  @apply tw-right-[-44px];
+
+  @apply tw-w-16;
+}
+
+.header .image-and-icons .meta {
+  @apply tw-absolute;
+  @apply tw-top-[300px];
+  @apply tw-right-[-30px];
+
+  @apply tw-w-16;
+}
+
+.carousel {
+  @apply tw-overflow-hidden;
+  @apply tw-relative;
+  @apply tw-w-full;
+  @apply tw-h-20;
+}
+
+.carousel-track {
+  @apply tw-flex;
+  animation: scroll 20s linear infinite;
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  width: 164px;
+  @apply tw-mr-5;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
