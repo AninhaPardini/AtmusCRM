@@ -8,7 +8,7 @@
       "schematics": {},
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "atm",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
@@ -97,5 +97,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "860f9b7b-3ca2-411b-92bf-848329c56160"
   }
 }
