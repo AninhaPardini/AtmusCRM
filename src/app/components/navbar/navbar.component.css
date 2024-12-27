@@ -38,10 +38,10 @@
   @apply tw-hidden;
   @apply tw-gap-4;
 
-  @apply md:tw-flex;
-  @apply md:tw-items-center;
-  @apply md:tw-justify-center;
-  @apply md:tw-gap-16;
+  @apply lg:tw-flex;
+  @apply lg:tw-items-center;
+  @apply lg:tw-justify-center;
+  @apply lg:tw-gap-16;
 }
 
 .list-item {
