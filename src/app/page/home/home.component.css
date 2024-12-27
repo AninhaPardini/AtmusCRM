@@ -116,3 +116,20 @@
     transform: translateX(-100%);
   }
 }
+
+.partners {
+  @apply tw-flex;
+  @apply tw-flex-col;
+  @apply tw-items-center;
+  @apply tw-justify-center;
+
+  @apply tw-gap-16;
+
+  @apply tw-py-16;
+}
+
+.partners h2 {
+  @apply tw-text-sm;
+  @apply tw-font-semibold;
+  @apply tw-text-gray-600;
+}
