@@ -38,7 +38,7 @@ export class IntegrationsComponent implements OnInit {
     this.renderer.listen('window', 'click', (event) => {
       const target = event.target as HTMLElement;
       console.log(target);
-      if (target.tagName === 'BUTTON') {
+      if (target.tagName === 'BUTTON' || target.tagName === 'I' || target.tagName === 'IMG') {
         const button = this.buttons.find((b) => b.name === target.id);
         if (button) {
           this.changeImage(button);
