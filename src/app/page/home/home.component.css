@@ -4,7 +4,7 @@
   @apply tw-items-center;
   @apply tw-justify-start;
 
-  @apply tw-gap-32;
+  @apply tw-gap-24;
 
   @apply tw-pt-56;
   @apply tw-mb-12;
@@ -90,6 +90,23 @@
   @apply tw-w-16;
 }
 
+.partners {
+  @apply tw-flex;
+  @apply tw-flex-col;
+  @apply tw-items-center;
+  @apply tw-justify-center;
+
+  @apply tw-gap-16;
+
+  @apply tw-py-12;
+}
+
+.partners h2 {
+  @apply tw-text-sm;
+  @apply tw-font-semibold;
+  @apply tw-text-gray-600;
+}
+
 .carousel {
   @apply tw-overflow-hidden;
   @apply tw-relative;
@@ -99,6 +116,7 @@
 
 .carousel-track {
   @apply tw-flex;
+  @apply tw-gap-8;
   animation: scroll 20s linear infinite;
 }
 
@@ -115,21 +133,4 @@
   100% {
     transform: translateX(-100%);
   }
-}
-
-.partners {
-  @apply tw-flex;
-  @apply tw-flex-col;
-  @apply tw-items-center;
-  @apply tw-justify-center;
-
-  @apply tw-gap-16;
-
-  @apply tw-py-16;
-}
-
-.partners h2 {
-  @apply tw-text-sm;
-  @apply tw-font-semibold;
-  @apply tw-text-gray-600;
 }

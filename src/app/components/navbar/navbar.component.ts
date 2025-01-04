@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'atm-navbar',
   imports: [CommonModule],
-templateUrl: './navbar.component.html',
+  templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
@@ -18,7 +18,8 @@ export class NavbarComponent {
   }
 
   private onScroll(): void {
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const scrollTop = window.pageYOffset || (typeof document !== 'undefined' && document.documentElement ? document.documentElement.scrollTop : 0);
+
     if (scrollTop > this.lastScrollTop) {
       // Scrolling down
       this.isVisible = false;
@@ -26,6 +27,6 @@ export class NavbarComponent {
       // Scrolling up
       this.isVisible = true;
     }
-    this.lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+    this.lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
   }
 }

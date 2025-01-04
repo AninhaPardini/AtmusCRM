@@ -1,0 +1,95 @@
+.integrations {
+  @apply tw-grid-flow-col;
+  @apply tw-grid-cols-2;
+  @apply tw-gap-6;
+
+  @apply tw-mt-20;
+  @apply tw-mb-20;
+  @apply tw-px-4;
+}
+
+.example {
+  @apply tw-relative;
+  @apply tw-max-w-[662px];
+  @apply tw-w-96;
+  @apply tw-h-96;
+
+  @apply tw-bg-cover;
+  @apply tw-bg-center;
+  @apply tw-bg-no-repeat;
+  @apply tw-rounded-xl;
+
+  @apply tw-mb-2;
+}
+
+.options {
+  @apply tw-flex;
+  @apply tw-items-start;
+  @apply tw-justify-start;
+
+  @apply tw-w-full;
+
+  @apply tw-overflow-hidden;
+
+  @apply tw-gap-1;
+}
+
+.integration {
+  @apply tw-max-w-64;
+  @apply tw-max-h-20;
+  @apply tw-min-w-20;
+
+  @apply tw-w-40;
+  @apply tw-h-16;
+
+  @apply tw-flex;
+  @apply tw-items-center;
+  @apply tw-justify-center;
+
+  @apply tw-rounded-md;
+}
+
+.integration i {
+  @apply tw-text-5xl;
+  @apply tw-text-white-50;
+}
+
+.integration img {
+  @apply tw-w-12;
+  @apply tw-max-w-20;
+}
+
+.insta {
+  @apply tw-bg-gradient-to-bl tw-from-[#7100ff] tw-via-[#ff0086] tw-to-[#ffda00];
+}
+
+.face {
+  @apply tw-bg-[#2356FF];
+}
+
+.meta {
+  @apply tw-bg-[#F6F8FF];
+}
+
+.meta i {
+  @apply tw-text-[#2356FF];
+}
+
+.google {
+  @apply tw-bg-[#F6F8FF];
+}
+
+.whats {
+  @apply tw-bg-[#00E632];
+}
+
+.next {
+  @apply tw-justify-start;
+  @apply tw-items-center;
+  @apply tw-pl-4;
+}
+
+.next i {
+  @apply tw-text-[#00E632];
+  @apply tw-text-xl;
+}
