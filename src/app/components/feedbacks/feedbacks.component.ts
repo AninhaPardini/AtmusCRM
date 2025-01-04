@@ -1,14 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { IntegrationsComponent } from '../../components/integrations/integrations.component';
-import { FeedbacksComponent } from "../../components/feedbacks/feedbacks.component";
 
 @Component({
-  selector: 'atm-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css'],
-  imports: [IntegrationsComponent, FeedbacksComponent]
+  selector: 'atm-feedbacks',
+  imports: [],
+  templateUrl: './feedbacks.component.html',
+  styleUrl: './feedbacks.component.css'
 })
-export class HomeComponent implements OnInit {
+export class FeedbacksComponent implements OnInit {
   ngOnInit() {
 
     if (typeof document !== 'undefined') {

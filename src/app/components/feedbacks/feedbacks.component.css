@@ -1,0 +1,85 @@
+.carousel {
+  @apply tw-overflow-hidden;
+  @apply tw-relative;
+  @apply tw-w-full;
+  @apply tw-h-[200px];
+}
+
+.carousel-track {
+  @apply tw-flex;
+  @apply tw-gap-0;
+
+  animation: scroll 10s linear infinite;
+}
+
+.carousel-item {
+  @apply tw-flex;
+  @apply tw-max-w-[388px];
+  @apply md:tw-max-h-[476px];
+
+  @apply tw-w-[388px];
+
+  @apply tw-absolute;
+
+  @apply tw-gap-2;
+
+  @apply tw-ml-5;
+}
+
+.second {
+  @apply tw-left-[404px];
+}
+
+.third {
+  @apply tw-left-[808px];
+}
+
+.carousel-item img {
+  @apply tw-w-16;
+  @apply tw-h-16;
+  @apply tw-rounded-full;
+
+  @apply tw-bg-cover;
+  @apply tw-bg-center;
+}
+
+.content {
+  @apply tw-flex;
+  @apply tw-flex-col;
+  @apply tw-items-start;
+  @apply tw-justify-center;
+
+  @apply tw-w-full;
+
+  @apply tw-gap-1;
+}
+
+.title-stars {
+  @apply tw-flex;
+  @apply tw-items-start;
+  @apply tw-justify-start;
+
+  @apply tw-gap-2;
+}
+
+.title-stars h4 {
+  @apply tw-text-xl;
+  @apply tw-font-semibold;
+  @apply tw-text-white-950;
+  @apply tw-whitespace-nowrap;
+}
+
+.title-stars img {
+  @apply tw-w-[114px];
+  @apply tw-h-8;
+  @apply tw-bg-top;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
