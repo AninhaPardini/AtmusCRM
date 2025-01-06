@@ -176,6 +176,7 @@
 }
 
 .textbox {
+  /* responsive */
   @apply tw-w-fit;
   @apply tw-absolute;
 
@@ -185,6 +186,9 @@
   @apply tw-rounded-lg;
   @apply tw-shadow-md;
 
+  /* desktop */
+
+  /* all */
   @apply tw-border-white-200;
   @apply tw-border;
 
@@ -198,16 +202,65 @@
 }
 
 .textbox.one {
+  /* responsive */
   @apply tw-top-[56%];
   @apply tw-left-20;
+
+  /* desktop */
 }
 
 .textbox.two {
+  /* responsive */
   @apply tw-top-[79%];
   @apply tw-left-1/4;
+
+  /* desktop */
 }
 
 .support-text {
+  /* responsive */
   @apply tw-hidden;
   @apply md:tw-flex;
+
+  /* desktop */
+}
+
+.other-features {
+  /* responsive */
+  @apply tw-mt-24;
+
+  @apply tw-grid;
+  @apply tw-grid-cols-1;
+
+  @apply tw-gap-8;
+
+  @apply tw-p-4;
+
+  /* desktop */
+  @apply lg:tw-grid-cols-2;
+}
+
+.other-features .text-area {
+  /* responsive */
+  @apply tw-text-center;
+  /* desktop */
+}
+
+.other-features .text-area h2 {
+  /* responsive */
+  @apply tw-mb-4;
+
+  @apply tw-text-4xl;
+  @apply tw-font-semibold;
+  @apply tw-text-pink-500;
+
+  /* desktop */
+}
+
+.other-features .text-area span {
+  /* responsive */
+  @apply tw-text-xl;
+  @apply tw-font-semibold;
+
+  /* desktop */
 }
