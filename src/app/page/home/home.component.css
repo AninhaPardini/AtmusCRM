@@ -134,3 +134,80 @@
     transform: translateX(-100%);
   }
 }
+
+.image-model {
+  @apply tw-relative;
+  @apply tw-w-fit;
+  @apply tw-h-fit;
+
+  @apply tw-bg-yellow-100;
+}
+
+.icon {
+  @apply tw-absolute;
+}
+
+.icon.whatsdemo {
+  @apply tw-top-[32px];
+  @apply tw-left-[72px];
+
+  @apply tw-w-16;
+}
+
+.icon.telegramdemo {
+  @apply tw-top-[116px];
+  @apply tw-left-[56px];
+
+  @apply tw-w-14;
+}
+
+.icon.instademo {
+  @apply tw-top-[132px];
+  @apply tw-right-[72px];
+
+  @apply tw-w-14;
+}
+
+.icon.messagerdemo {
+  @apply tw-top-[196px];
+  @apply tw-right-[20px];
+
+  @apply tw-w-16;
+}
+
+.textbox {
+  @apply tw-w-fit;
+  @apply tw-absolute;
+
+  @apply tw-text-lg;
+  @apply tw-p-4;
+
+  @apply tw-rounded-lg;
+  @apply tw-shadow-md;
+
+  @apply tw-border-white-200;
+  @apply tw-border;
+
+  background: rgba(249, 249, 249, 0.8);
+
+  backdrop-filter: blur(3px);
+}
+
+.textbox span {
+  @apply tw-font-semibold;
+}
+
+.textbox.one {
+  @apply tw-top-[56%];
+  @apply tw-left-20;
+}
+
+.textbox.two {
+  @apply tw-top-[79%];
+  @apply tw-left-1/4;
+}
+
+.support-text {
+  @apply tw-hidden;
+  @apply md:tw-flex;
+}
