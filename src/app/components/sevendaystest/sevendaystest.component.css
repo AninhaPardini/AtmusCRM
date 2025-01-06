@@ -1,0 +1,66 @@
+.main {
+  @apply tw-w-full;
+
+  @apply tw-px-4;
+  @apply tw-py-8;
+
+  @apply tw-flex;
+  @apply tw-items-center;
+  @apply tw-justify-center;
+
+  @apply tw-bg-white-50;
+
+  @apply tw-gap-8;
+}
+
+.plant {
+  @apply tw-w-12;
+}
+
+.plant.two {
+  transform: rotateY(180deg);
+}
+
+.content {
+  @apply tw-flex;
+  @apply tw-flex-col;
+  @apply tw-items-center;
+  @apply tw-justify-center;
+
+  @apply tw-gap-4;
+}
+
+.content h2 {
+  @apply tw-text-xl;
+  @apply tw-font-bold;
+
+  @apply tw-text-center;
+
+  @apply tw-text-pink-500;
+}
+
+.content p {
+  @apply tw-text-lg;
+  @apply tw-text-center;
+
+  @apply tw-text-gray-700;
+}
+
+.content a {
+  @apply tw-mt-4;
+  @apply tw-bg-pink-500;
+
+  @apply tw-font-semibold;
+  @apply tw-text-white-50;
+
+  @apply tw-py-2;
+  @apply tw-px-4;
+  @apply tw-rounded-md;
+
+  @apply tw-transition;
+  @apply tw-duration-300;
+  @apply tw-ease-in-out;
+
+  @apply tw-transform;
+  @apply hover:tw-scale-105;
+}
