@@ -126,15 +126,6 @@
   @apply tw-mr-5;
 }
 
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
 .image-model {
   @apply tw-relative;
   @apply tw-w-fit;
@@ -261,6 +252,151 @@
   /* responsive */
   @apply tw-text-xl;
   @apply tw-font-semibold;
+
+  /* desktop */
+}
+
+.section-circle {
+  /* responsive */
+  @apply tw-relative;
+
+  /* desktop */
+}
+
+.circle {
+  /* responsive */
+  @apply tw-absolute;
+  @apply tw-top-60;
+  @apply tw-z-[1];
+  /* desktop */
+}
+
+.personalities {
+  /* responsive */
+  @apply tw-mt-24;
+
+  @apply tw-p-6;
+
+  @apply tw-relative;
+  @apply tw-z-10;
+
+  @apply tw-flex;
+  @apply tw-flex-col;
+  @apply tw-items-center;
+  @apply tw-justify-center;
+
+  @apply tw-gap-8;
+
+  /* desktop */
+}
+
+.personalities h2 {
+  /* responsive */
+  @apply tw-mb-4;
+
+  @apply tw-text-2xl;
+  @apply tw-font-semibold;
+
+  /* desktop */
+}
+
+.personalities span {
+  /* responsive */
+  @apply tw-text-pink-500;
+}
+
+.personalities .box {
+  /* responsive */
+  @apply tw-w-full;
+  @apply tw-max-w-[400px];
+
+  @apply tw-rounded-2xl;
+  @apply tw-border;
+  @apply tw-border-white-100;
+  box-shadow: 0px 4px 10.1px 0px rgba(0, 0, 0, 0.03);
+
+  /* desktop */
+  @apply lg:tw-max-w-[325px];
+
+  /* all */
+  @apply tw-bg-white-50;
+}
+
+.personalities .box img {
+  /* responsive */
+  @apply tw-w-full;
+
+  /* desktop */
+}
+
+.personalities .box.one {
+  opacity: 0;
+
+  animation: fadeIn 0.6s ease-out;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+}
+
+.personalities .box.two {
+  opacity: 0;
+  animation: fadeIn 0.6s ease-out;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+}
+
+.personalities .box.three {
+  opacity: 0;
+  animation: fadeIn 0.6s ease-out;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+}
+
+.personalities .box .box-text-area {
+  /* responsive */
+  @apply tw-p-4;
+
+  @apply tw-flex;
+  @apply tw-flex-col;
+  @apply tw-gap-4;
+
+  @apply tw-text-xl;
+  /* desktop */
+}
+
+.personalities .box .box-text-area .category {
+  /* responsive */
+  @apply tw-text-lg;
+  @apply tw-font-semibold;
+
+  /* desktop */
+
+  /* all */
+  @apply tw-rounded-2xl;
+  @apply tw-w-fit;
+  @apply tw-py-1;
+  @apply tw-px-2;
+}
+
+.personalities .box .box-text-area .category.one {
+  /* responsive */
+  @apply tw-bg-green-100;
+  @apply tw-text-green-500;
+
+  /* desktop */
+}
+
+.personalities .box .box-text-area .category.two {
+  /* responsive */
+  @apply tw-bg-blue-100;
+  @apply tw-text-blue-500;
+
+  /* desktop */
+}
+
+.personalities .box .box-text-area .category.three {
+  /* responsive */
+  @apply tw-bg-yellow-100;
+  @apply tw-text-yellow-600;
 
   /* desktop */
 }
