@@ -280,14 +280,16 @@
   @apply tw-relative;
   @apply tw-z-10;
 
-  @apply tw-flex;
+
   @apply tw-flex-col;
   @apply tw-items-center;
   @apply tw-justify-center;
 
-  @apply tw-gap-8;
-
   /* desktop */
+
+  /* all */
+  @apply tw-flex;
+  @apply tw-gap-8;
 }
 
 .personalities h2 {
@@ -303,6 +305,18 @@
 .personalities span {
   /* responsive */
   @apply tw-text-pink-500;
+}
+
+.personalities .boxes {
+  /* responsive */
+  @apply tw-flex-col;
+
+  /* desktop */
+  @apply lg:tw-flex-row;
+
+  /* all */
+  @apply tw-flex;
+  @apply tw-gap-4;
 }
 
 .personalities .box {
@@ -335,6 +349,13 @@
   animation: fadeIn 0.6s ease-out;
   animation-fill-mode: forwards;
   animation-play-state: paused;
+
+  /* responsive */
+  @media screen and (min-width: 768px) {
+    animation: fadeIn 0.6s ease-out;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+  }
 }
 
 .personalities .box.two {
@@ -342,6 +363,12 @@
   animation: fadeIn 0.6s ease-out;
   animation-fill-mode: forwards;
   animation-play-state: paused;
+
+  @media screen and (min-width: 768px) {
+    animation: fadeIn 1s ease-out;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+  }
 }
 
 .personalities .box.three {
@@ -349,6 +376,12 @@
   animation: fadeIn 0.6s ease-out;
   animation-fill-mode: forwards;
   animation-play-state: paused;
+
+  @media screen and (min-width: 768px) {
+    animation: fadeIn 1.2s ease-out;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+  }
 }
 
 .personalities .box .box-text-area {
@@ -359,7 +392,7 @@
   @apply tw-flex-col;
   @apply tw-gap-4;
 
-  @apply tw-text-xl;
+  @apply tw-text-base;
   /* desktop */
 }
 
