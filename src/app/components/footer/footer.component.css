@@ -1,0 +1,156 @@
+.footer {
+  /* Mobile */
+  @apply tw-px-2;
+  /* Desktop */
+  @apply lg:tw-px-0;
+
+  /* All */
+  @apply tw-w-full;
+  @apply tw-text-white-50;
+}
+
+.container {
+  /* Mobile */
+  @apply tw-px-20;
+  @apply tw-pt-16;
+  @apply tw-pb-8;
+  @apply tw-gap-8;
+
+  /* Desktop */
+  @apply lg:tw-gap-11;
+
+  /* All */
+  @apply tw-w-full;
+  @apply tw-bg-[#292929];
+  @apply tw-rounded-t-3xl;
+  @apply tw-flex-col;
+  @apply tw-justify-start;
+  @apply tw-items-center;
+  @apply tw-inline-flex;
+}
+
+.main {
+  /* Mobile */
+  @apply tw-flex-col;
+
+  /* Desktop */
+  @apply lg:tw-flex-row;
+  @apply lg:tw-justify-between;
+
+  /* All */
+  @apply tw-w-full;
+  @apply tw-flex;
+  @apply tw-items-start;
+}
+
+.nav {
+  /* Mobile */
+  @apply tw-flex-col;
+  @apply tw-gap-2;
+
+  /* Desktop */
+  @apply lg:tw-gap-12;
+  @apply lg:tw-flex-row;
+  @apply lg:tw-justify-between;
+
+  /* All */
+  @apply tw-flex;
+  @apply tw-items-start;
+}
+
+.list {
+  /* Mobile */
+  @apply tw-gap-2;
+  @apply tw-mt-8;
+
+  /* Desktop */
+  @apply lg:tw-gap-4;
+
+  /* All */
+  @apply tw-flex;
+  @apply tw-flex-col;
+  @apply tw-items-start;
+}
+
+.list h3 {
+  /* Mobile */
+  @apply tw-text-lg;
+  @apply tw-font-semibold;
+
+  /* Desktop */
+
+  /* All */
+}
+
+.list ul li {
+  /* Mobile */
+  @apply tw-mt-2;
+
+  /* Desktop */
+
+  /* All */
+
+}
+
+.list a {
+  /* Mobile */
+  @apply tw-text-white-300;
+
+  /* Desktop */
+
+  /* All */
+  @apply hover:tw-text-pink-500;
+
+}
+
+.rights-and-socials {
+  /* Mobile */
+
+  /* Desktop */
+  @apply lg:tw-flex-row;
+
+  /* All */
+  @apply tw-flex;
+  @apply tw-w-full;
+  @apply tw-text-center;
+  @apply tw-justify-between;
+}
+
+.socials {
+  /* Mobile */
+  @apply tw-gap-4;
+  @apply tw-bg-white-900;
+  @apply tw-py-2;
+  @apply tw-px-4;
+  @apply tw-mt-2;
+  @apply tw-rounded-3xl;
+
+  /* Desktop */
+  @apply lg:tw-gap-6;
+  @apply lg:tw-mt-0;
+  @apply md:tw-bg-transparent;
+
+  /* All */
+  @apply tw-items-center;
+}
+
+.social i {
+  /* Mobile */
+  @apply tw-text-white-100;
+  @apply tw-text-2xl;
+
+  /* Desktop */
+
+  /* All */
+  @apply hover:tw-text-pink-500;
+}
+
+.rights-and-socials p {
+  /* Mobile */
+  @apply tw-text-white-300;
+  @apply tw-text-start;
+
+  /* Desktop */
+
+  /* All */
+}

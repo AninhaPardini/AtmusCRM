@@ -27,7 +27,7 @@
               }
             ],
             "styles": [
-              "src/styles.css",
+              "src/app/themes/styles.css",
               "node_modules/boxicons/css/boxicons.min.css"
             ],
             "scripts": [],
@@ -91,7 +91,8 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/themes/styles.css",
+              "src/themes/animations.css"
             ],
             "scripts": []
           }
