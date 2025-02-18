@@ -1,6 +1,13 @@
 .integrations {
+  /* responsive */
   @apply tw-grid-flow-col;
   @apply tw-grid-cols-2;
+
+  /* desktop */
+  @apply md:tw-flex;
+
+  /* all */
+  @apply tw-container;
   @apply tw-gap-6;
 
   @apply tw-mt-20;
@@ -9,11 +16,15 @@
 }
 
 .example {
-  @apply tw-relative;
-  @apply tw-max-w-[662px];
-  @apply tw-w-96;
-  @apply tw-h-96;
+  /* responsive */
+  @apply tw-max-w-[384px];
+  @apply tw-w-full;
 
+  /* desktop */
+
+  @apply md:tw-max-w-[80%];
+
+  /* all */
   @apply tw-bg-cover;
   @apply tw-bg-center;
   @apply tw-bg-no-repeat;
@@ -27,6 +38,10 @@
   @apply tw-items-start;
   @apply tw-justify-start;
 
+  /* desktop */
+  @apply md:tw-justify-center;
+  @apply md:tw-flex-col;
+  /* all */
   @apply tw-w-full;
 
   @apply tw-overflow-hidden;

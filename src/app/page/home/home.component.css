@@ -1,4 +1,16 @@
+.main {
+  @apply tw-flex;
+  @apply tw-flex-col;
+  @apply tw-items-center;
+  @apply tw-justify-start;
+
+  @apply tw-overflow-hidden;
+
+  @apply tw-pt-56;
+}
+
 .header {
+  @apply tw-container;
   @apply tw-flex;
   @apply tw-flex-col;
   @apply tw-items-center;
@@ -6,7 +18,6 @@
 
   @apply tw-gap-24;
 
-  @apply tw-pt-56;
   @apply tw-mb-12;
 }
 
@@ -19,22 +30,38 @@
 }
 
 .header div h1 {
+  /* responsive */
   @apply tw-text-lg;
   @apply tw-font-bold;
   @apply tw-text-gray-900;
 
+  /* desktop */
+  @apply md:tw-text-4xl;
+
+
+  /* all */
   @apply tw-items-center;
   @apply tw-justify-center;
   @apply tw-text-center;
 }
 
 .header div h1 span {
-  @apply tw-text-pink-500;
+  /* responsive */
   @apply tw-text-5xl;
+
+  /* desktop */
+  @apply md:tw-text-6xl;
+
+  /* all */
   @apply tw-text-center;
+  @apply tw-text-pink-500;
 }
 
 .header div p {
+  /* responsive */
+  @apply tw-text-center;
+
+  /* all */
   @apply tw-text-lg;
   @apply tw-text-gray-700;
 }
@@ -44,50 +71,116 @@
 }
 
 .header .image-and-icons .main-example {
-  @apply tw-relative;
-
+  /* responsive */
   @apply tw-max-w-[380px];
-  @apply md:tw-max-w-md;
+  @apply md:tw-max-w-[80%];
 }
 
 .header .image-and-icons .whats {
-  @apply tw-absolute;
-  @apply tw-top-[-10px];
-  @apply tw-left-[-10px];
+  /* responsive */
+  @apply tw-top-[-32px];
+  @apply tw-left-[10px];
 
   @apply tw-w-16;
+
+  /* tablet */
+  @apply md:tw-top-[-16px];
+  @apply md:tw-left-[8px];
+
+  @apply md:tw-w-20;
+
+  /* desktop */
+  @apply lg:tw-top-[-20px];
+  @apply lg:tw-left-[8dvw];
+
+  @apply md:tw-w-24;
+
+  /* all */
+  @apply tw-absolute;
 }
 
 .header .image-and-icons .google {
-  @apply tw-absolute;
-  @apply tw-top-[70px];
-  @apply tw-left-[10px];
+  /* responsive */
+  @apply tw-top-[40px];
+  @apply tw-left-[-8px];
 
   @apply tw-w-14;
+
+  /* tablet */
+  @apply md:tw-top-[70px];
+  @apply md:tw-left-[10px];
+
+  @apply md:tw-w-16;
+
+  /* desktop */
+  @apply md:tw-top-24;
+  @apply md:tw-left-[5dvw];
+
+  @apply md:tw-w-24;
+
+  /* all */
+  @apply tw-absolute;
 }
 
 .header .image-and-icons .insta {
-  @apply tw-absolute;
-  @apply tw-top-[164px];
-  @apply tw-right-[10px];
+  /* responsive */
+  @apply tw-top-[-20px];
+  @apply tw-right-[20px];
 
   @apply tw-w-14;
+
+  /* tablet */
+  @apply md:tw-top-[300px];
+  @apply md:tw-right-[1dvw];
+
+  @apply md:tw-w-16;
+
+  /* desktop */
+  @apply lg:tw-top-[164px];
+  @apply lg:tw-right-[5.4dvw];
+
+  @apply md:tw-w-24;
+
+  /* all */
+  @apply tw-absolute;
 }
 
 .header .image-and-icons .face {
-  @apply tw-absolute;
-  @apply tw-top-[224px];
-  @apply tw-right-[-16px];
+  /* responsive */
+  @apply tw-bottom-[56px];
+  @apply tw-right-[-8px];
 
   @apply tw-w-16;
+
+  /* tablet */
+  @apply md:tw-bottom-[500px];
+  @apply md:tw-right-[5dvw];
+
+  /* desktop */
+  @apply lg:tw-top-[280px];
+  @apply lg:tw-right-[4dvw];
+
+  @apply lg:tw-w-24;
+
+  /* all */
+  @apply tw-absolute;
 }
 
 .header .image-and-icons .meta {
-  @apply tw-absolute;
-  @apply tw-top-[300px];
-  @apply tw-right-[10px];
+  /* responsive */
+  @apply tw-bottom-[-20px];
+  @apply tw-right-[8px];
 
   @apply tw-w-16;
+
+  /* desktop */
+  @apply md:tw-top-[400px];
+  @apply md:tw-right-[5.4dvw];
+
+  @apply md:tw-w-24;
+
+  /* all */
+  @apply tw-absolute;
 }
 
 .partners {
@@ -102,13 +195,14 @@
 }
 
 .partners h2 {
-  @apply tw-text-sm;
+  @apply tw-text-base;
   @apply tw-font-semibold;
   @apply tw-text-gray-600;
 }
 
 .carousel {
   @apply tw-overflow-hidden;
+
   @apply tw-relative;
   @apply tw-w-full;
   @apply tw-h-20;
@@ -127,11 +221,41 @@
 }
 
 .image-model {
-  @apply tw-relative;
-  @apply tw-w-fit;
-  @apply tw-h-fit;
+  /* responsive */
+  @apply tw-mb-24;
+  @apply max-md:tw-w-fit;
+  @apply max-md:tw-h-fit;
 
+  /* desktop */
+  @apply lg:tw-container;
+  @apply lg:tw-mb-32;
+
+  @apply lg:tw-flex;
+  @apply lg:tw-items-end;
+  @apply lg:tw-justify-end;
+
+  @apply lg:tw-p-4;
+
+  @apply lg:tw-h-[359px];
+  @apply lg:tw-max-w-[1024px];
+
+  @apply lg:tw-rounded-3xl;
+
+  /* all */
+  @apply tw-relative;
   @apply tw-bg-yellow-100;
+
+}
+
+.model {
+  /* responsive */
+
+  /* desktop */
+  @apply lg:tw-absolute;
+  @apply lg:tw-left-[1dvw];
+
+
+  /* all */
 }
 
 .icon {
@@ -139,34 +263,72 @@
 }
 
 .icon.whatsdemo {
+  /* Reponsive */
   @apply tw-top-[32px];
-  @apply tw-left-[72px];
+  @apply tw-left-[56px];
+
+  @apply tw-w-20;
+
+  /* Desktop */
+  @apply lg:tw-top-[-20px];
+  @apply lg:tw-left-[16dvw];
 
   @apply tw-w-16;
+
+  /* All */
 }
 
 .icon.telegramdemo {
-  @apply tw-top-[116px];
-  @apply tw-left-[56px];
+  /* Responsive */
+  @apply tw-bottom-[264px];
+  @apply tw-left-[40px];
 
   @apply tw-w-14;
+
+  /* Desktop */
+  @apply lg:tw-bottom-[-48px];
+  @apply lg:tw-left-96;
+
+  @apply lg:tw-w-24;
+
+  /* All */
 }
 
 .icon.instademo {
+  /* Responsive */
   @apply tw-top-[132px];
   @apply tw-right-[72px];
 
   @apply tw-w-14;
+
+  /* Desktop */
+  @apply lg:tw-top-[16px];
+  @apply lg:tw-left-[19dvw];
+
+  @apply lg:tw-w-28;
+
+  /* All */
+
 }
 
 .icon.messagerdemo {
+  /* Responsive */
   @apply tw-top-[196px];
   @apply tw-right-[20px];
 
   @apply tw-w-16;
+
+  /* Desktop */
+  @apply tw-top-[220px];
+  @apply lg:tw-left-[24dvw];
+
+  @apply lg:tw-w-20;
+
+  /* All */
+
 }
 
-.textbox {
+.text-box {
   /* responsive */
   @apply tw-w-fit;
   @apply tw-absolute;
@@ -174,7 +336,7 @@
   @apply tw-text-lg;
   @apply tw-p-4;
 
-  @apply tw-rounded-lg;
+  @apply tw-rounded-2xl;
   @apply tw-shadow-md;
 
   /* desktop */
@@ -188,32 +350,118 @@
   backdrop-filter: blur(3px);
 }
 
-.textbox span {
+.text-box span {
   @apply tw-font-semibold;
 }
 
-.textbox.one {
+.text-box.one {
   /* responsive */
-  @apply tw-top-[56%];
-  @apply tw-left-20;
+  @apply tw-top-[72%];
+  @apply tw-left-4;
 
   /* desktop */
+  @apply lg:tw-top-[64%];
+  @apply lg:tw-left-[-88px];
 }
 
-.textbox.two {
+.text-box.two {
   /* responsive */
-  @apply tw-top-[79%];
-  @apply tw-left-1/4;
+  @apply tw-top-[96%];
+  @apply tw-left-12;
 
   /* desktop */
+  @apply lg:tw-top-[94%];
+  @apply lg:tw-left-[-20px];
 }
 
 .support-text {
   /* responsive */
   @apply tw-hidden;
-  @apply md:tw-flex;
 
   /* desktop */
+  @apply lg:tw-flex;
+  @apply lg:tw-flex-col;
+  @apply lg:tw-w-fit;
+  @apply lg:tw-h-full;
+
+  @apply lg:tw-gap-4;
+
+  /* all */
+}
+
+.icons-model {
+  /* responsive */
+  @apply tw-flex;
+  @apply tw-gap-4;
+
+  /* desktop */
+  @apply lg:tw-flex;
+  @apply lg:tw-justify-center;
+  @apply lg:tw-items-center;
+
+  /* all */
+}
+
+.icons-model p {
+  @apply tw-text-5xl;
+  @apply tw-font-semibold;
+  @apply tw-text-orange-500;
+
+}
+
+.icon-model {
+  /* responsive */
+  @apply tw-w-8;
+  @apply tw-h-8;
+
+  /* desktop */
+  @apply lg:tw-w-fit;
+  @apply lg:tw-h-fit;
+
+  /* all */
+  @apply tw-bg-orange-100;
+  @apply tw-rounded-3xl;
+  @apply tw-p-4;
+
+}
+
+.text-model {
+  @apply tw-h-full;
+
+  @apply tw-flex;
+  @apply tw-justify-center;
+  @apply tw-items-center;
+  @apply tw-text-center;
+
+  @apply tw-rounded-3xl;
+
+  @apply tw-text-xl;
+  @apply tw-font-semibold;
+
+  @apply tw-bg-yellow-600;
+}
+
+.text-model span {
+  @apply tw-text-pink-500;
+}
+
+.text-model p {
+  @apply tw-text-white-100;
+}
+
+.fast-more-brain {
+  @apply tw-flex;
+  @apply tw-gap-2;
+}
+
+.atmus-model {
+  @apply tw-flex;
+  @apply tw-justify-center;
+  @apply tw-items-center;
+
+  @apply tw-text-pink-500;
+
+  @apply tw-gap-2;
 }
 
 .other-features {
@@ -229,12 +477,17 @@
 
   /* desktop */
   @apply lg:tw-grid-cols-2;
+
+  /* all */
+  @apply tw-container;
 }
 
 .other-features .text-area {
   /* responsive */
   @apply tw-text-center;
+
   /* desktop */
+  @apply lg:tw-text-left;
 }
 
 .other-features .text-area h2 {
@@ -246,6 +499,7 @@
   @apply tw-text-pink-500;
 
   /* desktop */
+
 }
 
 .other-features .text-area span {
@@ -261,11 +515,19 @@
   @apply tw-relative;
 
   /* desktop */
+
+  /* all */
+  @apply tw-w-full;
+  @apply tw-flex;
+  @apply tw-flex-col;
+  @apply tw-items-center;
+  @apply tw-justify-center;
 }
 
 .circle {
   /* responsive */
   @apply tw-absolute;
+  @apply tw-left-0;
   @apply tw-top-60;
   @apply tw-z-[1];
   /* desktop */
@@ -288,6 +550,7 @@
   /* desktop */
 
   /* all */
+  @apply tw-container;
   @apply tw-flex;
   @apply tw-gap-8;
 }
@@ -300,6 +563,10 @@
   @apply tw-font-semibold;
 
   /* desktop */
+  @apply tw-text-4xl;
+
+  /* all */
+  @apply tw-text-center;
 }
 
 .personalities span {
@@ -432,4 +699,16 @@
   @apply tw-text-yellow-600;
 
   /* desktop */
+}
+
+.faq {
+  /* responsive */
+  @apply tw-px-4;
+  @apply tw-container;
+
+  /* desktop */
+
+  /* all */
+  padding-bottom: 80px;
+  padding-top: 200px;
 }

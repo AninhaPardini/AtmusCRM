@@ -3,4 +3,5 @@ import { HomeComponent } from './page/home/home.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
+  { path: 'inicial', component: HomeComponent },
 ];

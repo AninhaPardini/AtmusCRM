@@ -1,13 +1,11 @@
-<nav class="navbar" [ngClass]="isVisible ? 'nav-inactive' : 'nav-active'">
-  <img src="/logos/logo.svg" alt="Logo Atmus CRM" class="logo responsive-only"/>
-  <img src="/logos/logo-extended.svg" alt="Logo extendida Atmus CRM" class="desktop-only"/>
+<nav class="navbar">
+  <div class="logo-group">
+    <img src="/logos/logo.svg" alt="Logo Atmus CRM" class="logo responsive-only" />
+    <img src="/logos/logo-extended.svg" alt="Logo extendida Atmus CRM" class="desktop-only" />
+  </div>
   <ul class="list">
     <li>
-      <a
-        routerLink="/home"
-        routerLinkActive="active"
-        class="list-active list-item"
-      >
+      <a routerLink="/home" routerLinkActive="active" class="list-active list-item">
         Inicial
       </a>
     </li>
@@ -26,8 +24,8 @@
     <button class="btn-primary">Teste por 7 dias</button>
     <button class="btn-secondary">
       <a routerLink="/login" routerLinkActive="active">
-        <i class="bx bx-user"></i> 
-        Login 
+        <i class="bx bx-user"></i>
+        Login
       </a>
     </button>
   </div>

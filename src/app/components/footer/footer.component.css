@@ -1,22 +1,25 @@
 .footer {
-  /* Mobile */
+  /* Responsive */
   @apply tw-px-2;
+
   /* Desktop */
   @apply lg:tw-px-0;
 
   /* All */
   @apply tw-w-full;
   @apply tw-text-white-50;
+  @apply tw-z-10;
 }
 
 .container {
-  /* Mobile */
-  @apply tw-px-20;
+  /* Responsive */
+  @apply tw-px-10;
   @apply tw-pt-16;
   @apply tw-pb-8;
   @apply tw-gap-8;
 
   /* Desktop */
+  @apply lg:tw-px-20;
   @apply lg:tw-gap-11;
 
   /* All */
@@ -30,7 +33,7 @@
 }
 
 .main {
-  /* Mobile */
+  /* Responsive */
   @apply tw-flex-col;
 
   /* Desktop */
@@ -44,7 +47,7 @@
 }
 
 .nav {
-  /* Mobile */
+  /* Responsive */
   @apply tw-flex-col;
   @apply tw-gap-2;
 
@@ -59,12 +62,13 @@
 }
 
 .list {
-  /* Mobile */
+  /* Responsive */
   @apply tw-gap-2;
   @apply tw-mt-8;
 
   /* Desktop */
   @apply lg:tw-gap-4;
+  @apply lg:tw-mt-0;
 
   /* All */
   @apply tw-flex;
@@ -73,7 +77,7 @@
 }
 
 .list h3 {
-  /* Mobile */
+  /* Responsive */
   @apply tw-text-lg;
   @apply tw-font-semibold;
 
@@ -83,7 +87,7 @@
 }
 
 .list ul li {
-  /* Mobile */
+  /* Responsive */
   @apply tw-mt-2;
 
   /* Desktop */
@@ -93,7 +97,7 @@
 }
 
 .list a {
-  /* Mobile */
+  /* Responsive */
   @apply tw-text-white-300;
 
   /* Desktop */
@@ -104,7 +108,7 @@
 }
 
 .rights-and-socials {
-  /* Mobile */
+  /* Responsive */
 
   /* Desktop */
   @apply lg:tw-flex-row;
@@ -117,7 +121,7 @@
 }
 
 .socials {
-  /* Mobile */
+  /* Responsive */
   @apply tw-gap-4;
   @apply tw-bg-white-900;
   @apply tw-py-2;
@@ -135,7 +139,7 @@
 }
 
 .social i {
-  /* Mobile */
+  /* Responsive */
   @apply tw-text-white-100;
   @apply tw-text-2xl;
 
@@ -146,7 +150,7 @@
 }
 
 .rights-and-socials p {
-  /* Mobile */
+  /* Responsive */
   @apply tw-text-white-300;
   @apply tw-text-start;
 

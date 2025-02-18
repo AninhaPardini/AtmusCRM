@@ -1,1 +1,10 @@
-<p>faq works!</p>
+<p-accordion [value]="0">
+  @for (tab of faqItems; track tab.question) {
+  <p-accordion-panel [value]="tab.value">
+    <p-accordion-header>{{ tab.question }}</p-accordion-header>
+    <p-accordion-content>
+      <p class="m-0">{{ tab.answer }}</p>
+    </p-accordion-content>
+  </p-accordion-panel>
+  }
+</p-accordion>

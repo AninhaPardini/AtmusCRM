@@ -3,12 +3,13 @@ import { IntegrationsComponent } from '../../components/integrations/integration
 import { FeedbacksComponent } from "../../components/feedbacks/feedbacks.component";
 import { SevendaystestComponent } from "../../components/sevendaystest/sevendaystest.component";
 import throttle from 'lodash/throttle';
+import { FaqComponent } from "../../components/faq/faq.component";
 
 @Component({
   selector: 'atm-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
-  imports: [IntegrationsComponent, FeedbacksComponent, SevendaystestComponent]
+  imports: [IntegrationsComponent, FeedbacksComponent, SevendaystestComponent, FaqComponent]
 })
 
 export class HomeComponent implements OnInit, OnDestroy {
@@ -36,7 +37,7 @@ export class HomeComponent implements OnInit, OnDestroy {
 
         function playAnimation(el: any) {
           if (isOnScreen(el)) {
-            el.style.animationPlayState = 'running';
+            el.style.fadeOut = 'running';
           }
         }
 
