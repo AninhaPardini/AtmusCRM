@@ -3,9 +3,7 @@
   @apply tw-py-4;
   @apply tw-px-8;
 
-  @apply tw-flex;
-  @apply tw-justify-between;
-  @apply tw-items-center;
+
 
   /* Desktop */
   @apply md:tw-px-16;
@@ -23,6 +21,12 @@
   @apply tw-z-50;
 }
 
+.container {
+  @apply tw-flex;
+  @apply tw-justify-between;
+  @apply tw-items-center;
+}
+
 .logo-group {
   /* Responsive */
   @apply tw-w-fit;
@@ -36,7 +40,7 @@
 
   /* Desktop */
   @apply lg:tw-w-[20%];
-  @apply lg:tw-flex;
+  @apply xl:tw-flex;
   @apply lg:tw-items-center;
   @apply lg:tw-justify-between;
   @apply lg:tw-gap-16;
@@ -57,7 +61,7 @@
   @apply hover:tw-text-white-950;
 }
 
-.list-active {
+.active {
   @apply tw-text-black;
 }
 

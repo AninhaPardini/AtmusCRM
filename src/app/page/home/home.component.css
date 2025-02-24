@@ -1,24 +1,30 @@
 .main {
+
+  /* All */
   @apply tw-flex;
   @apply tw-flex-col;
   @apply tw-items-center;
   @apply tw-justify-start;
 
   @apply tw-overflow-hidden;
-
-  @apply tw-pt-56;
 }
 
 .header {
+  /* Responsive */
+  @apply tw-pt-48;
+  @apply tw-gap-24;
+
+  @apply tw-mb-12;
+
+  /* Desktop */
+  @apply md:tw-pt-56;
+
+  /* All */
   @apply tw-container;
   @apply tw-flex;
   @apply tw-flex-col;
   @apply tw-items-center;
   @apply tw-justify-start;
-
-  @apply tw-gap-24;
-
-  @apply tw-mb-12;
 }
 
 .header div {
@@ -27,6 +33,22 @@
   @apply tw-items-center;
   @apply tw-justify-center;
   @apply tw-gap-4;
+}
+
+.title-and-description {
+  opacity: 0;
+
+  animation: fadeIn 0.4s ease-out;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+  animation-delay: 100ms;
+
+  /* responsive */
+  @media screen and (min-width: 768px) {
+    animation: fadeIn 0.7s ease-out;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+  }
 }
 
 .header div h1 {
@@ -43,6 +65,8 @@
   @apply tw-items-center;
   @apply tw-justify-center;
   @apply tw-text-center;
+
+
 }
 
 .header div h1 span {
@@ -72,7 +96,8 @@
 
 .header .image-and-icons .main-example {
   /* responsive */
-  @apply tw-max-w-[380px];
+  @apply tw-max-w-[464px];
+
   @apply md:tw-max-w-[80%];
 }
 
@@ -97,6 +122,20 @@
 
   /* all */
   @apply tw-absolute;
+
+  opacity: 0;
+
+  animation: leftToRight 0.4s ease-out;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+  animation-delay: 100ms;
+
+  /* responsive */
+  @media screen and (min-width: 768px) {
+    animation: leftToRight 0.7s ease-out;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+  }
 }
 
 .header .image-and-icons .google {
@@ -120,6 +159,20 @@
 
   /* all */
   @apply tw-absolute;
+
+  opacity: 0;
+
+  animation: leftToRight 0.4s ease-out;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+  animation-delay: 100ms;
+
+  /* responsive */
+  @media screen and (min-width: 768px) {
+    animation: leftToRight 0.7s ease-out;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+  }
 }
 
 .header .image-and-icons .insta {
@@ -143,6 +196,20 @@
 
   /* all */
   @apply tw-absolute;
+
+  opacity: 0;
+
+  animation: rightToLeft 0.4s ease-out;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+  animation-delay: 100ms;
+
+  /* responsive */
+  @media screen and (min-width: 768px) {
+    animation: rightToLeft 0.7s ease-out;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+  }
 }
 
 .header .image-and-icons .face {
@@ -164,6 +231,20 @@
 
   /* all */
   @apply tw-absolute;
+
+  opacity: 0;
+
+  animation: rightToLeft 0.4s ease-out;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+  animation-delay: 100ms;
+
+  /* responsive */
+  @media screen and (min-width: 768px) {
+    animation: rightToLeft 0.7s ease-out;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+  }
 }
 
 .header .image-and-icons .meta {
@@ -181,6 +262,20 @@
 
   /* all */
   @apply tw-absolute;
+
+  opacity: 0;
+
+  animation: rightToLeft 0.4s ease-out;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+  animation-delay: 100ms;
+
+  /* responsive */
+  @media screen and (min-width: 768px) {
+    animation: rightToLeft 0.7s ease-out;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+  }
 }
 
 .partners {
@@ -188,10 +283,17 @@
   @apply tw-flex-col;
   @apply tw-items-center;
   @apply tw-justify-center;
-
   @apply tw-gap-16;
-
   @apply tw-py-12;
+}
+
+.active {
+  @apply tw-opacity-100;
+  @apply tw-transform;
+  @apply tw-translate-x-0;
+  @apply tw-transition-all;
+  @apply tw-duration-500;
+  @apply tw-ease-in-out;
 }
 
 .partners h2 {
@@ -202,7 +304,6 @@
 
 .carousel {
   @apply tw-overflow-hidden;
-
   @apply tw-relative;
   @apply tw-w-full;
   @apply tw-h-20;
@@ -211,13 +312,13 @@
 .carousel-track {
   @apply tw-flex;
   @apply tw-gap-8;
-  animation: scroll 20s linear infinite;
 }
 
 .carousel-item {
   flex: 0 0 auto;
-  width: 164px;
+  @apply tw-w-[164px];
   @apply tw-mr-5;
+  transition: transform 0.5s ease-in-out;
 }
 
 .image-model {
@@ -227,19 +328,19 @@
   @apply max-md:tw-h-fit;
 
   /* desktop */
-  @apply lg:tw-container;
-  @apply lg:tw-mb-32;
+  @apply md:tw-container;
+  @apply md:tw-mb-32;
 
-  @apply lg:tw-flex;
-  @apply lg:tw-items-end;
-  @apply lg:tw-justify-end;
+  @apply md:tw-flex;
+  @apply md:tw-items-end;
+  @apply md:tw-justify-end;
 
-  @apply lg:tw-p-4;
+  @apply md:tw-px-4;
 
-  @apply lg:tw-h-[359px];
+  @apply md:tw-h-[359px];
   @apply lg:tw-max-w-[1024px];
 
-  @apply lg:tw-rounded-3xl;
+  @apply md:tw-rounded-3xl;
 
   /* all */
   @apply tw-relative;
@@ -271,7 +372,7 @@
 
   /* Desktop */
   @apply lg:tw-top-[-20px];
-  @apply lg:tw-left-[16dvw];
+  @apply lg:tw-left-[300px];
 
   @apply tw-w-16;
 
@@ -303,7 +404,7 @@
 
   /* Desktop */
   @apply lg:tw-top-[16px];
-  @apply lg:tw-left-[19dvw];
+  @apply lg:tw-left-[364px];
 
   @apply lg:tw-w-28;
 
@@ -320,7 +421,7 @@
 
   /* Desktop */
   @apply tw-top-[220px];
-  @apply lg:tw-left-[24dvw];
+  @apply lg:tw-left-[440px];
 
   @apply lg:tw-w-20;
 
@@ -387,6 +488,7 @@
   @apply lg:tw-gap-4;
 
   /* all */
+  @apply tw-py-4;
 }
 
 .icons-model {
@@ -462,6 +564,13 @@
   @apply tw-text-pink-500;
 
   @apply tw-gap-2;
+}
+
+.atmus-model p {
+  @apply tw-text-4xl;
+  @apply tw-font-semibold;
+
+  @apply tw-text-pink-500;
 }
 
 .other-features {
@@ -613,13 +722,14 @@
 .personalities .box.one {
   opacity: 0;
 
-  animation: fadeIn 0.6s ease-out;
+  animation: fadeIn 0.4s ease-out;
   animation-fill-mode: forwards;
   animation-play-state: paused;
+  animation-delay: 100ms;
 
   /* responsive */
   @media screen and (min-width: 768px) {
-    animation: fadeIn 0.6s ease-out;
+    animation: fadeIn 0.7s ease-out;
     animation-fill-mode: forwards;
     animation-play-state: paused;
   }
@@ -630,9 +740,10 @@
   animation: fadeIn 0.6s ease-out;
   animation-fill-mode: forwards;
   animation-play-state: paused;
+  animation-delay: 100ms;
 
   @media screen and (min-width: 768px) {
-    animation: fadeIn 1s ease-out;
+    animation: fadeIn 0.9s ease-out;
     animation-fill-mode: forwards;
     animation-play-state: paused;
   }
@@ -643,9 +754,10 @@
   animation: fadeIn 0.6s ease-out;
   animation-fill-mode: forwards;
   animation-play-state: paused;
+  animation-delay: 100ms;
 
   @media screen and (min-width: 768px) {
-    animation: fadeIn 1.2s ease-out;
+    animation: fadeIn 1s ease-out;
     animation-fill-mode: forwards;
     animation-play-state: paused;
   }

@@ -3,6 +3,17 @@ module.exports = {
   prefix: 'tw-',
   important: false,
   content: [],
+  container: {
+    center: true,
+    padding: '1rem',
+    screens: {
+      sm: '640px',
+      md: '768px',
+      lg: '864px',
+      xl: '1024px',
+      '2xl': '1536px',
+    },
+  },
   theme: {
     extend: {
       colors: {

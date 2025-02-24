@@ -11,6 +11,7 @@ body {
   font-family: 'Poppins', sans-serif;
   @apply tw-text-gray-600;
   @apply tw-bg-gray-50;
+  scroll-behavior: smooth;
 }
 
 .responsive-only {

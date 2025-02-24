@@ -1,0 +1,179 @@
+<div class="main">
+  <h1>Conheça mais sobre <span>Nossos Planos</span></h1>
+  <div class="plans-list">
+    <div class="list-item">
+      <div class="content">
+        <div class="tag a">PLANO A</div>
+      </div>
+      <div class="prices">
+        <div class="old">
+          <div class="text">
+            <span class="coin">
+              R$
+            </span>
+            <span class="value">
+              47,90
+              por
+            </span>
+          </div>
+          <div class="line"></div>
+        </div>
+        <div class="actual">
+          <div class="coin">
+            R$</div>
+          <div class="value">
+            34,99</div>
+          <div class="period">
+            /mês</div>
+        </div>
+      </div>
+      <div class="benefits">
+        <ul *ngIf="showAllOne" class="list">
+          <li *ngFor="let benefit of benefitsOne | slice:0:7" class="item">
+            <i class="bx bx-check-circle"></i>
+            {{ benefit.text }}
+          </li>
+        </ul>
+        <ul *ngIf="!showAllOne" class="list">
+          <li *ngFor="let benefit of benefitsOne" class="item">
+            <i class="bx bx-check-circle"></i>
+            {{ benefit.text }}
+          </li>
+
+        </ul>
+        <div class="show-more">
+          <button (click)="showAllOne = !showAllOne" class="show-all-btn text">
+            <p *ngIf="showAllOne">
+              Ocultar todos
+              <i class='bx bx-chevron-up'></i>
+            </p>
+            <p *ngIf="!showAllOne">
+              Mostrar todos
+              <i class='bx bx-chevron-down'></i>
+            </p>
+
+          </button>
+        </div>
+      </div>
+      <button class="btn-primary">
+        Começar agora
+      </button>
+    </div>
+    <div class="list-item">
+      <div class="content">
+        <div class="tag a">PLANO A</div>
+      </div>
+      <div class="prices">
+        <div class="old">
+          <div class="text">
+            <span class="coin">
+              R$
+            </span>
+            <span class="value">
+              47,90
+              por
+            </span>
+          </div>
+          <div class="line"></div>
+        </div>
+        <div class="actual">
+          <div class="coin">
+            R$</div>
+          <div class="value">
+            34,99</div>
+          <div class="period">
+            /mês</div>
+        </div>
+      </div>
+      <div class="benefits">
+        <ul *ngIf="showAllTwo" class="list">
+          <li *ngFor="let benefit of benefitsTwo | slice:0:7" class="item">
+            <i class="bx bx-check-circle"></i>
+            {{ benefit.text }}
+          </li>
+        </ul>
+        <ul *ngIf="!showAllTwo" class="list">
+          <li *ngFor="let benefit of benefitsTwo" class="item">
+            <i class="bx bx-check-circle"></i>
+            {{ benefit.text }}
+          </li>
+
+        </ul>
+        <div class="show-more">
+          <button (click)="showAllTwo = !showAllTwo" class="show-all-btn text">
+            <p *ngIf="showAllTwo">
+              Ocultar todos
+              <i class='bx bx-chevron-up'></i>
+            </p>
+            <p *ngIf="!showAllTwo">
+              Mostrar todos
+              <i class='bx bx-chevron-down'></i>
+            </p>
+
+          </button>
+        </div>
+      </div>
+      <button class="btn-primary">
+        Começar agora
+      </button>
+    </div>
+    <div class="list-item">
+      <div class="content">
+        <div class="tag a">PLANO A</div>
+      </div>
+      <div class="prices">
+        <div class="old">
+          <div class="text">
+            <span class="coin">
+              R$
+            </span>
+            <span class="value">
+              47,90
+              por
+            </span>
+          </div>
+          <div class="line"></div>
+        </div>
+        <div class="actual">
+          <div class="coin">
+            R$</div>
+          <div class="value">
+            34,99</div>
+          <div class="period">
+            /mês</div>
+        </div>
+      </div>
+      <div class="benefits">
+        <ul *ngIf="showAllThree" class="list">
+          <li *ngFor="let benefit of benefitsThree | slice:0:7" class="item">
+            <i class="bx bx-check-circle"></i>
+            {{ benefit.text }}
+          </li>
+        </ul>
+        <ul *ngIf="!showAllThree" class="list">
+          <li *ngFor="let benefit of benefitsThree" class="item">
+            <i class="bx bx-check-circle"></i>
+            {{ benefit.text }}
+          </li>
+
+        </ul>
+        <div class="show-more">
+          <button (click)="showAllThree = !showAllThree" class="show-all-btn text">
+            <p *ngIf="showAllThree">
+              Ocultar todos
+              <i class='bx bx-chevron-up'></i>
+            </p>
+            <p *ngIf="!showAllThree">
+              Mostrar todos
+              <i class='bx bx-chevron-down'></i>
+            </p>
+
+          </button>
+        </div>
+      </div>
+      <button class="btn-primary">
+        Começar agora
+      </button>
+    </div>
+  </div>
+</div>

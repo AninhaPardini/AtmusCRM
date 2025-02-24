@@ -4,12 +4,13 @@ import { FeedbacksComponent } from "../../components/feedbacks/feedbacks.compone
 import { SevendaystestComponent } from "../../components/sevendaystest/sevendaystest.component";
 import throttle from 'lodash/throttle';
 import { FaqComponent } from "../../components/faq/faq.component";
+import { PlansComponent } from "../../components/plans/plans.component";
 
 @Component({
   selector: 'atm-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
-  imports: [IntegrationsComponent, FeedbacksComponent, SevendaystestComponent, FaqComponent]
+  imports: [IntegrationsComponent, FeedbacksComponent, SevendaystestComponent, FaqComponent, PlansComponent]
 })
 
 export class HomeComponent implements OnInit, OnDestroy {
@@ -18,12 +19,6 @@ export class HomeComponent implements OnInit, OnDestroy {
   ngOnInit() {
     if (typeof document !== 'undefined') {
       document.addEventListener('DOMContentLoaded', () => {
-        const carouselTrack = document.querySelector('.carousel-track');
-        if (carouselTrack) {
-          const clone = carouselTrack.innerHTML;
-          carouselTrack.innerHTML += clone;
-        }
-
         const players = Array.from(document.querySelectorAll('.js-play-on-screen'));
         console.log('aaa', players);
 
@@ -31,19 +26,24 @@ export class HomeComponent implements OnInit, OnDestroy {
 
         function isOnScreen(el: any) {
           let rect = el.getBoundingClientRect();
-          console.log('rect', rect);
-          return rect.top > 0 && rect.bottom < window.innerHeight;
+          return rect.top >= 0 && rect.bottom <= window.innerHeight;
         }
 
         function playAnimation(el: any) {
           if (isOnScreen(el)) {
-            el.style.fadeOut = 'running';
+            el.style.animationPlayState = 'running';
           }
         }
 
         this.render();
 
         window.addEventListener('scroll', this.render);
+        window.addEventListener('resize', this.render);
+        document.addEventListener('touchstart', this.render);
+        document.addEventListener('touchmove', this.render);
+        document.addEventListener('touchend', this.render);
+
+        this.render();
       });
     }
   }

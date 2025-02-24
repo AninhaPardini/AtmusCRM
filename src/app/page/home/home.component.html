@@ -1,6 +1,6 @@
 <main class="main">
-  <header class="header">
-    <div class="title-and-description">
+  <header class="header" id="header">
+    <div class="title-and-description js-play-on-screen">
       <h1>TUDO QUE VOCÊ PRECISA EM<br>
         <span>UM SÓ LUGAR</span>
       </h1>
@@ -11,13 +11,13 @@
       <img src="/logos/whats-logo.svg" alt="Icone do WhatsApp" class="whats js-play-on-screen">
       <img src="/logos/google-logo.svg" alt="Icone do Google" class="google js-play-on-screen">
       <img src="/logos/insta-logo.svg" alt="Icone do Insta" class="insta js-play-on-screen">
-      <img src="/logos/face-logo.svg" alt="Icone do Face" class="face">
+      <img src="/logos/face-logo.svg" alt="Icone do Face" class="face js-play-on-screen">
       <img src="/logos/meta-logo.svg" alt="Icone do Meta" class="meta js-play-on-screen">
     </div>
   </header>
   <section class="partners">
     <h2>Confiam em nós</h2>
-    <div class="carousel">
+    <div class="carousel" id="carousel">
       <div class="carousel-track">
         <div class="carousel-item"><img src="/partners/apibrasil.svg" alt="Logo API Brasil"></div>
         <div class="carousel-item"><img src="https://uds.com.br/blog/wp-content/uploads/2024/08/image-27.png"
@@ -31,7 +31,9 @@
       </div>
     </div>
   </section>
-  <atm-integrations></atm-integrations>
+  <section id="integrations">
+    <atm-integrations></atm-integrations>
+  </section>
   <atm-feedbacks></atm-feedbacks>
   <section class="image-model js-play-on-screen">
     <img src="/demonstration-model/model.svg" alt="" class="model" id="demonstration">
@@ -94,6 +96,26 @@
       </span>
     </div>
     <div class="image-area"></div>
+    <div class="text-area">
+      <h2>Gerencie seus processos</h2>
+      Você poderá criar tarefas e gerenciá -las, além de poder
+      <span>
+        atribuir
+      </span>
+      aos seus colaboradores,
+      <span>
+        adicionar tags, datas limites, chat
+      </span>
+      e muito mais! <br /><br />
+      <span>
+        Atmus CRM
+      </span>
+      vem com a possibilidade de
+      <span>
+        acompanhar e gerenciar suas vendas com muito mais praticidade!
+      </span>
+    </div>
+    <div class="image-area"></div>
   </section>
   <div class="section-circle">
     <atm-sevendaystest></atm-sevendaystest>
@@ -134,27 +156,8 @@
       </div>
     </section>
   </div>
-  <section class="other-features js-play-on-screen">
-    <div class="text-area">
-      <h2>Gerencie seus processos</h2>
-      Você poderá criar tarefas e gerenciá -las, além de poder
-      <span>
-        atribuir
-      </span>
-      aos seus colaboradores,
-      <span>
-        adicionar tags, datas limites, chat
-      </span>
-      e muito mais! <br /><br />
-      <span>
-        Atmus CRM
-      </span>
-      vem com a possibilidade de
-      <span>
-        acompanhar e gerenciar suas vendas com muito mais praticidade!
-      </span>
-    </div>
-    <div class="image-area"></div>
+  <section class="plans" id="plans">
+    <atm-plans></atm-plans>
   </section>
   <section class="faq">
     <atm-faq style="padding-bottom: 24px;"></atm-faq>

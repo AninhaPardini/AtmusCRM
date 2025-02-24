@@ -1,10 +1,12 @@
 .integrations {
   /* responsive */
-  @apply tw-grid-flow-col;
-  @apply tw-grid-cols-2;
+  @apply tw-flex;
+  @apply tw-flex-col;
+  @apply tw-justify-center;
+  @apply tw-items-start;
 
   /* desktop */
-  @apply md:tw-flex;
+  @apply md:tw-flex-row;
 
   /* all */
   @apply tw-container;
@@ -17,7 +19,7 @@
 
 .example {
   /* responsive */
-  @apply tw-max-w-[384px];
+  @apply tw-max-w-[464px];
   @apply tw-w-full;
 
   /* desktop */
@@ -35,28 +37,132 @@
 
 .options {
   @apply tw-flex;
-  @apply tw-items-start;
-  @apply tw-justify-start;
+  @apply tw-justify-between;
+  @apply tw-items-end;
+  @apply tw-gap-1;
+
+  @apply tw-relative;
 
   /* desktop */
-  @apply md:tw-justify-center;
+  @apply md:tw-justify-start;
   @apply md:tw-flex-col;
+  @apply tw-gap-1;
+
   /* all */
   @apply tw-w-full;
 
   @apply tw-overflow-hidden;
+}
 
-  @apply tw-gap-1;
+.show-all-btn {
+  /* responsive */
+  @apply tw-w-full;
+  @apply tw-flex;
+  @apply tw-justify-center;
+  @apply tw-items-center;
+
+  /* desktop */
+  @apply md:tw-w-48;
+  @apply md:tw-py-4;
+
+  /* all */
+  @apply tw-rounded-md;
+  @apply tw-text-white-950;
+}
+
+.list {
+  /* responsive */
+  @apply tw-flex;
+  @apply tw-w-full;
+  @apply tw-h-[90%];
+
+  /* desktop */
+  @apply md:tw-absolute;
+  @apply md:tw-flex-wrap;
+  @apply md:tw-justify-between;
+
+  @apply md:tw-bg-white-50;
+
+  @apply md:tw-rounded-md;
+
+  /* all */
+  @apply tw-transition;
+  @apply tw-duration-200;
+  @apply tw-ease-in-out;
+
+}
+
+.integration-item {
+  /* responsive */
+  @apply tw-flex;
+  @apply tw-justify-center;
+  @apply tw-items-center;
+
+  /* desktop */
+  @apply md:tw-filter;
+  @apply md:tw-grayscale-[80%];
+  @apply md:tw-opacity-50;
+  flex: 1 1 70px;
+
+  /* all */
+  @apply tw-w-fit;
+  transition: all 0.4s ease-out;
+  animation: fadeIn 0.4s ease-out;
+}
+
+.integration-item:hover {
+  /* responsive */
+  @apply tw-filter;
+  @apply tw-grayscale-0;
+  @apply tw-opacity-100;
+}
+
+.integration-item:hover img {
+  /* responsive */
+  @apply tw-w-12;
+
+  /* Desktop */
+  @apply md:tw-w-full;
+  @apply md:tw-max-w-12;
+}
+
+.integration-item:hover i {
+  /* Responsive */
+  @apply tw-text-6xl;
+
+  /* Desktop */
+  @apply md:tw-text-7xl;
+}
+
+.integration-item i {
+  /* Responsive */
+  @apply tw-text-5xl;
+
+  /* Desktop */
+  @apply md:tw-text-5xl;
+
+  @apply tw-text-white-50;
+}
+
+.integration-item img {
+  /* Responsive */
+  @apply tw-w-10;
+
+  /* Desktop */
+  @apply md:tw-w-full;
+  @apply md:tw-max-w-9;
 }
 
 .integration {
-  @apply tw-max-w-64;
+  /* Responsive */
+  @apply tw-w-full;
   @apply tw-max-h-20;
   @apply tw-min-w-20;
 
-  @apply tw-w-40;
-  @apply tw-h-16;
+  /* Desktop */
+  @apply tw-min-w-48;
 
+  /* All */
   @apply tw-flex;
   @apply tw-items-center;
   @apply tw-justify-center;
@@ -65,21 +171,32 @@
 }
 
 .integration i {
+  /* Responsive */
   @apply tw-text-5xl;
+
+  /* Desktop */
+  @apply md:tw-text-7xl;
+
   @apply tw-text-white-50;
 }
 
 .integration img {
-  @apply tw-w-12;
-  @apply tw-max-w-20;
+  /* Responsive */
+  @apply tw-w-10;
+
+  /* Desktop */
+  @apply md:tw-w-full;
+  @apply md:tw-max-w-14;
 }
 
 .insta {
   @apply tw-bg-gradient-to-bl tw-from-[#7100ff] tw-via-[#ff0086] tw-to-[#ffda00];
+  @apply tw-text-white-50;
 }
 
 .face {
   @apply tw-bg-[#2356FF];
+  @apply tw-text-white-50;
 }
 
 .meta {
@@ -91,11 +208,13 @@
 }
 
 .google {
-  @apply tw-bg-[#F6F8FF];
+  @apply tw-bg-[#FDFDFD];
+  @apply md:tw-p-3;
 }
 
 .whats {
   @apply tw-bg-[#00E632];
+  @apply tw-text-white-50;
 }
 
 .next {
@@ -105,6 +224,26 @@
 }
 
 .next i {
-  @apply tw-text-[#00E632];
+  @apply tw-text-black;
   @apply tw-text-xl;
+}
+
+.shopify {
+  @apply tw-bg-green-600;
+  @apply tw-text-white-50;
+}
+
+.messenger {
+  @apply tw-bg-blue-600;
+  @apply tw-text-white-50;
+}
+
+.hotmart {
+  @apply tw-bg-[#FF6D00];
+  @apply tw-text-white-50;
+}
+
+.pipedrive {
+  @apply tw-bg-[#017737];
+  @apply tw-text-white-50;
 }

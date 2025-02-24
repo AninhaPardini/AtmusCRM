@@ -1,0 +1,256 @@
+.main {
+  @apply tw-flex;
+  @apply tw-flex-col;
+  @apply tw-justify-center;
+  @apply tw-items-center;
+
+  @apply tw-gap-24;
+
+  @apply tw-w-full;
+  @apply tw-pt-24;
+  @apply tw-pb-16;
+  @apply tw-px-8;
+}
+
+.main h1 {
+  /* responsive */
+  @apply tw-mb-4;
+
+  @apply tw-text-2xl;
+  @apply tw-font-semibold;
+
+  /* desktop */
+  @apply md:tw-text-4xl;
+
+  /* all */
+  @apply tw-text-center;
+}
+
+.main span {
+  /* responsive */
+  @apply tw-text-pink-500;
+
+  @apply tw-text-2xl;
+  @apply tw-font-semibold;
+
+  /* desktop */
+  @apply md:tw-text-4xl;
+}
+
+.main .plans-list {
+  @apply tw-flex;
+  @apply tw-justify-center;
+  @apply tw-flex-wrap;
+  @apply tw-items-center;
+
+  @apply tw-gap-8;
+
+  @apply tw-w-full;
+}
+
+.list-item {
+  @apply tw-relative;
+
+  @apply tw-flex;
+  @apply tw-flex-col;
+  @apply tw-justify-center;
+  @apply tw-items-center;
+
+  @apply tw-w-fit;
+  @apply tw-pt-16;
+  @apply tw-pb-8;
+  @apply tw-px-8;
+
+  @apply tw-bg-white-50;
+
+  @apply tw-shadow-md;
+  @apply tw-rounded-3xl;
+
+
+  @apply tw-gap-8;
+
+  flex: 1 1 auto;
+}
+
+.list-item:hover {
+  @apply tw-cursor-pointer;
+  @apply tw-shadow-lg;
+  @apply tw-scale-105;
+
+  @apply tw-transition;
+  @apply tw-duration-500;
+  @apply tw-ease-in-out;
+
+}
+
+.list-item .content {
+  @apply tw-top-[-32px];
+  @apply tw-absolute;
+  @apply tw-px-16;
+  @apply tw-py-4;
+
+  @apply tw-justify-center;
+  @apply tw-items-center;
+
+  @apply tw-bg-white-100;
+  @apply tw-rounded-3xl;
+}
+
+.tag {
+  @apply tw-text-center;
+  @apply tw-text-2xl;
+  @apply tw-font-semibold;
+}
+
+.tag.a {
+  @apply tw-text-white-500;
+}
+
+.prices {
+  @apply tw-flex;
+  @apply tw-flex-col;
+  @apply tw-justify-center;
+  @apply tw-items-center;
+  @apply tw-gap-1;
+  @apply tw-px-8;
+  @apply tw-mb-2;
+}
+
+.prices .old {
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  display: inline-flex
+}
+
+.prices .old .coin {
+  color: #FF699B;
+  font-size: 16px;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: 42px;
+  word-wrap: break-word
+}
+
+.prices .old .value {
+  color: #FF699B;
+  font-size: 28px;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: 42px;
+  word-wrap: break-word
+}
+
+.line {
+  @apply tw-absolute;
+  @apply tw-w-[124px];
+  @apply tw-h-[2px];
+  @apply tw-bg-[#FF699B];
+}
+
+.prices .actual {
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  display: inline-flex
+}
+
+.prices .actual .coin {
+  text-align: center;
+  color: #292929;
+  font-size: 24px;
+  font-family: Poppins;
+  font-weight: 700;
+  line-height: 69px;
+  word-wrap: break-word
+}
+
+.prices .actual .value {
+  text-align: center;
+  color: #292929;
+  font-size: 46px;
+  font-family: Poppins;
+  font-weight: 700;
+  line-height: 69px;
+  word-wrap: break-word
+}
+
+.period {
+  text-align: center;
+  color: #292929;
+  font-size: 22px;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: 32px;
+  word-wrap: break-word
+}
+
+.benefits {
+  @apply tw-flex;
+  @apply tw-flex-col;
+  @apply tw-justify-start;
+  @apply tw-items-center;
+  @apply tw-gap-8;
+
+  @apply tw-transition-all;
+  @apply tw-duration-500;
+  @apply tw-ease-in-out;
+}
+
+.benefits .list {
+  @apply tw-flex;
+  @apply tw-flex-col;
+  @apply tw-justify-start;
+  @apply tw-items-start;
+  @apply tw-gap-3;
+
+  @apply tw-text-white-800;
+}
+
+.benefits .list .item {
+  @apply tw-flex;
+  @apply tw-justify-start;
+  @apply tw-items-center;
+  @apply tw-gap-3;
+}
+
+.benefits .list i {
+  @apply tw-text-green-500;
+  @apply tw-text-2xl;
+}
+
+.show-more {
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  display: inline-flex
+}
+
+.show-more .text p {
+  @apply tw-flex;
+  @apply tw-justify-center;
+  @apply tw-items-center;
+  @apply tw-gap-2;
+
+  @apply tw-text-pink-500;
+  @apply tw-font-semibold;
+  @apply tw-cursor-pointer;
+
+  @apply tw-text-lg;
+
+  @apply tw-transition;
+  @apply tw-duration-200;
+  @apply tw-ease-in-out;
+
+
+}
+
+.show-more .text p i {
+  @apply tw-text-2xl;
+}
+
+.btn-primary {
+  @apply tw-w-full;
+  @apply tw-py-3;
+  @apply tw-text-lg;
+}

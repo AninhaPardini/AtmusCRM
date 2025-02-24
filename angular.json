@@ -27,6 +27,7 @@
               }
             ],
             "styles": [
+              "src/app/themes/animations.css",
               "src/app/themes/styles.css",
               "node_modules/boxicons/css/boxicons.min.css"
             ],

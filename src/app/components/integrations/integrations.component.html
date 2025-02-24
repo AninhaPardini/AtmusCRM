@@ -1,29 +1,19 @@
 <section class="integrations">
   <img src="/base-exemplo.png" alt="" class="example" id="demonstration">
   <nav class="options">
-    <button id="whats" onclick="console.log('Whatsapp')"
-     class="integration whats">
-      <i id="whats" class="bx bxl-whatsapp"></i>
+    <div *ngIf="showAll" class="list">
+      <button *ngFor="let button of buttons" [id]="button.id" class="integration-item" [ngClass]="button.class">
+        <i *ngIf="button.iconClass" [id]="button.id" [class]="button.iconClass"></i>
+        <img *ngIf="button.imgSrc" [id]="button.id" [src]="button.imgSrc" [alt]="button.imgAlt">
+      </button>
+    </div>
+    <button *ngFor="let button of buttons | slice:0:7" [id]="button.id" class="integration" [ngClass]="button.class">
+      <i *ngIf="button.iconClass" [id]="button.id" [class]="button.iconClass"></i>
+      <img *ngIf="button.imgSrc" [id]="button.id" [src]="button.imgSrc" [alt]="button.imgAlt">
     </button>
-    <button
-    id="google" class="integration google">
-      <img id="google" src="https://static.cdnlogo.com/logos/g/35/google-icon.svg" alt="Google Icon">
-    </button>
-    <button
-    id="insta" class="integration insta">
-      <i id="insta" class="bx bxl-instagram"></i>
-    </button>
-    <button
-    id="face" class="integration face">
-      <i id="face" class="bx bxl-facebook"></i>
-    </button>
-    <button
-    id="" class="integration next">
-      <i id="next" class="bx bxs-right-arrow"></i>
-    </button>
-    <button
-    id="meta" class="integration meta">
-      <i id="meta" class="bx bxl-meta"></i>
+    <button (click)="showAll = !showAll" class="show-all-btn">
+      <p *ngIf="showAll">Ocultar todos</p>
+      <p *ngIf="!showAll">Mostrar todos</p>
     </button>
   </nav>
 </section>
