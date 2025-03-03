@@ -1,6 +1,8 @@
 .main {
 
   /* All */
+  @apply tw-relative;
+
   @apply tw-flex;
   @apply tw-flex-col;
   @apply tw-items-center;
@@ -9,15 +11,32 @@
   @apply tw-overflow-hidden;
 }
 
+.background {
+  /* Responsive */
+  @apply tw-max-w-[1100px];
+  @apply tw-top-[0px];
+
+  /* Desktop */
+  @apply md:tw-max-w-[2000px];
+
+  /* all */
+  @apply md:tw-top-[-200px];
+  @apply tw-absolute;
+}
+
 .header {
   /* Responsive */
   @apply tw-pt-48;
-  @apply tw-gap-24;
+  @apply tw-gap-16;
 
   @apply tw-mb-12;
 
+  @apply tw-px-8;
+
   /* Desktop */
   @apply md:tw-pt-56;
+  @apply md:tw-px-0;
+  @apply md:tw-gap-24;
 
   /* All */
   @apply tw-container;
@@ -32,6 +51,7 @@
   @apply tw-flex-col;
   @apply tw-items-center;
   @apply tw-justify-center;
+
   @apply tw-gap-4;
 }
 
@@ -92,10 +112,12 @@
 
 .header .image-and-icons {
   @apply tw-relative;
+  @apply tw-w-full;
 }
 
 .header .image-and-icons .main-example {
   /* responsive */
+  @apply tw-w-full;
   @apply tw-max-w-[464px];
 
   @apply md:tw-max-w-[80%];
@@ -576,11 +598,7 @@
 .other-features {
   /* responsive */
   @apply tw-mt-24;
-
-  @apply tw-grid;
-  @apply tw-grid-cols-1;
-
-  @apply tw-gap-8;
+  @apply tw-gap-32;
 
   @apply tw-p-4;
 
@@ -589,17 +607,20 @@
 
   /* all */
   @apply tw-container;
+  @apply tw-flex;
+  @apply tw-flex-col;
 }
 
 .other-features .text-area {
   /* responsive */
-  @apply tw-text-center;
+
 
   /* desktop */
-  @apply lg:tw-text-left;
+  @apply md:tw-w-[70%];
+
 }
 
-.other-features .text-area h2 {
+.other-features .feature .text-area h2 {
   /* responsive */
   @apply tw-mb-4;
 
@@ -611,12 +632,47 @@
 
 }
 
-.other-features .text-area span {
+.other-features .feature .text-area span {
   /* responsive */
   @apply tw-text-xl;
   @apply tw-font-semibold;
 
   /* desktop */
+}
+
+.other-features .feature {
+  /* responsive */
+  @apply md:tw-grid-flow-row;
+  @apply md:tw-grid-cols-2;
+  @apply md:tw-grid;
+
+
+  /* all */
+  @apply tw-grid;
+  @apply tw-items-center;
+  @apply tw-w-full;
+}
+
+.other-features .feature.one .text-area {
+  /* responsive */
+
+
+  /* desktop */
+  @apply md:tw-text-left;
+
+
+  /* all */
+}
+
+.other-features .feature.two .text-area {
+  /* responsive */
+
+
+  /* desktop */
+  @apply md:tw-text-right;
+
+
+  /* all */
 }
 
 .section-circle {

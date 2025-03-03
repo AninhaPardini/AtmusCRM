@@ -11,7 +11,7 @@
 
   /* All */
   @apply tw-fixed;
-  @apply tw-bg-white-50;
+  @apply tw-bg-gray-50;
   @apply tw-bg-opacity-80;
 
   @apply tw-top-0;
@@ -22,6 +22,9 @@
 }
 
 .container {
+  @apply tw-container;
+  @apply tw-mx-auto;
+
   @apply tw-flex;
   @apply tw-justify-between;
   @apply tw-items-center;

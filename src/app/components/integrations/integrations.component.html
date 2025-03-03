@@ -1,19 +1,30 @@
 <section class="integrations">
   <img src="/base-exemplo.png" alt="" class="example" id="demonstration">
   <nav class="options">
-    <div *ngIf="showAll" class="list">
-      <button *ngFor="let button of buttons" [id]="button.id" class="integration-item" [ngClass]="button.class">
+    <div class="container">
+      <div *ngIf="showAll" class="list">
+        <button *ngFor="let button of buttons" [id]="button.id" class="integration-item desktop-only"
+          [ngClass]="button.class">
+          <i *ngIf="button.iconClass" [id]="button.id" [class]="button.iconClass"></i>
+          <img *ngIf="button.imgSrc" [id]="button.id" [src]="button.imgSrc" [alt]="button.imgAlt">
+        </button>
+      </div>
+      <button *ngFor="let button of buttons | slice:0:7" [id]="button.id" class="integration desktop-only"
+        [ngClass]="button.class">
+        <i *ngIf="button.iconClass" [id]="button.id" [class]="button.iconClass"></i>
+        <img *ngIf="button.imgSrc" [id]="button.id" [src]="button.imgSrc" [alt]="button.imgAlt">
+      </button>
+      <button *ngFor="let button of buttons | slice:0:7" [id]="button.id" class="integration responsive-only"
+        [ngClass]="button.class">
         <i *ngIf="button.iconClass" [id]="button.id" [class]="button.iconClass"></i>
         <img *ngIf="button.imgSrc" [id]="button.id" [src]="button.imgSrc" [alt]="button.imgAlt">
       </button>
     </div>
-    <button *ngFor="let button of buttons | slice:0:7" [id]="button.id" class="integration" [ngClass]="button.class">
-      <i *ngIf="button.iconClass" [id]="button.id" [class]="button.iconClass"></i>
-      <img *ngIf="button.imgSrc" [id]="button.id" [src]="button.imgSrc" [alt]="button.imgAlt">
-    </button>
     <button (click)="showAll = !showAll" class="show-all-btn">
       <p *ngIf="showAll">Ocultar todos</p>
       <p *ngIf="!showAll">Mostrar todos</p>
     </button>
   </nav>
+  <img class="circles one" src="/integrations/circles.svg" alt="Circulos">
+  <img class="circles two" src="/integrations/circles-two.svg" alt="Circulos">
 </section>

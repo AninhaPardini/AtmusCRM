@@ -7,7 +7,7 @@
   @apply tw-gap-8;
 
   /* desktop */
-  @apply lg:tw-pt-64;
+  @apply lg:tw-py-40;
 
   /* all */
   @apply tw-w-full;

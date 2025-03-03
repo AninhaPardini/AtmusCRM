@@ -4,17 +4,20 @@
   @apply tw-flex-col;
   @apply tw-justify-center;
   @apply tw-items-start;
+  @apply tw-px-4;
 
   /* desktop */
   @apply md:tw-flex-row;
+  @apply md:tw-pt-32;
+  @apply md:tw-px-0;
 
   /* all */
+  @apply tw-relative;
   @apply tw-container;
   @apply tw-gap-6;
 
   @apply tw-mt-20;
   @apply tw-mb-20;
-  @apply tw-px-4;
 }
 
 .example {
@@ -23,7 +26,6 @@
   @apply tw-w-full;
 
   /* desktop */
-
   @apply md:tw-max-w-[80%];
 
   /* all */
@@ -36,6 +38,22 @@
 }
 
 .options {
+  /* responsive */
+  @apply tw-flex;
+  @apply tw-flex-col;
+  @apply tw-justify-center;
+  @apply tw-items-center;
+
+  /* desktop */
+  @apply md:tw-justify-between;
+
+  /* all */
+  @apply tw-w-full;
+  @apply tw-h-full;
+  @apply tw-gap-4;
+}
+
+.container {
   @apply tw-flex;
   @apply tw-justify-between;
   @apply tw-items-end;
@@ -50,6 +68,7 @@
 
   /* all */
   @apply tw-w-full;
+  @apply tw-h-auto;
 
   @apply tw-overflow-hidden;
 }
@@ -60,6 +79,8 @@
   @apply tw-flex;
   @apply tw-justify-center;
   @apply tw-items-center;
+
+  @apply tw-py-4;
 
   /* desktop */
   @apply md:tw-w-48;
@@ -74,12 +95,10 @@
   /* responsive */
   @apply tw-flex;
   @apply tw-w-full;
-  @apply tw-h-[90%];
+  @apply tw-h-[100%];
 
   /* desktop */
-  @apply md:tw-absolute;
-  @apply md:tw-flex-wrap;
-  @apply md:tw-justify-between;
+
 
   @apply md:tw-bg-white-50;
 
@@ -90,11 +109,14 @@
   @apply tw-duration-200;
   @apply tw-ease-in-out;
 
+  @apply tw-absolute;
+  @apply tw-flex-wrap;
+  @apply tw-justify-between;
+
 }
 
 .integration-item {
   /* responsive */
-  @apply tw-flex;
   @apply tw-justify-center;
   @apply tw-items-center;
 
@@ -108,6 +130,7 @@
   @apply tw-w-fit;
   transition: all 0.4s ease-out;
   animation: fadeIn 0.4s ease-out;
+
 }
 
 .integration-item:hover {
@@ -157,13 +180,12 @@
   /* Responsive */
   @apply tw-w-full;
   @apply tw-max-h-20;
-  @apply tw-min-w-20;
+  @apply tw-min-w-14;
 
   /* Desktop */
-  @apply tw-min-w-48;
+  @apply md:tw-min-w-48;
 
   /* All */
-  @apply tw-flex;
   @apply tw-items-center;
   @apply tw-justify-center;
 
@@ -246,4 +268,18 @@
 .pipedrive {
   @apply tw-bg-[#017737];
   @apply tw-text-white-50;
+}
+
+.circles {
+  @apply tw-absolute;
+  @apply tw-top-0;
+  width: calc(16dvw + 40px);
+}
+
+.circles.one {
+  @apply tw-left-[-30vw];
+}
+
+.circles.two {
+  @apply tw-right-[-36vw];
 }
