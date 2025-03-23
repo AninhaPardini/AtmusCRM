@@ -616,7 +616,7 @@
 
 
   /* desktop */
-  @apply md:tw-w-[70%];
+  @apply tw-max-w-[600px];
 
 }
 
@@ -642,15 +642,19 @@
 
 .other-features .feature {
   /* responsive */
-  @apply md:tw-grid-flow-row;
-  @apply md:tw-grid-cols-2;
-  @apply md:tw-grid;
+  @apply tw-flex;
+  @apply tw-flex-col;
+  @apply tw-justify-center;
 
+
+  /* desktop */
+  @apply md:tw-flex-row;
+  @apply md:tw-justify-between;
+  @apply md:tw-gap-12;
 
   /* all */
-  @apply tw-grid;
   @apply tw-items-center;
-  @apply tw-w-full;
+
 }
 
 .other-features .feature.one .text-area {
@@ -673,6 +677,16 @@
 
 
   /* all */
+}
+
+.other-features .feature .image.desktop {
+  /* responsive */
+
+  /* desktop */
+  @apply md:tw-w-[50%];
+
+  /* all */
+
 }
 
 .section-circle {

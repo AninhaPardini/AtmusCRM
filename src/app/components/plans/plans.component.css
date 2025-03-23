@@ -88,7 +88,7 @@
 
 }
 
-.priceAndButton {
+.price-and-button {
   @apply tw-p-4;
 
   @apply tw-shadow-lg;
@@ -327,9 +327,10 @@
   }
 }
 
-.priceAndButton.two {
+.price-and-button.two {
   background: linear-gradient(0deg, #ED116A 0%, #ff5090 100%);
   @apply tw-shadow-xl;
+  @apply tw-shadow-pink-200;
 }
 
 .prices .old .coin.two {
@@ -362,10 +363,6 @@
   @apply tw-bg-white-50;
   @apply tw-text-pink-600;
   @apply tw-border-none;
-}
-
-.show-more.two .text p {
-  @apply tw-text-pink-500;
 }
 
 .list-item.two {
