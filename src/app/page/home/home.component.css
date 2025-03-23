@@ -319,9 +319,9 @@
 }
 
 .partners h2 {
-  @apply tw-text-base;
+  @apply tw-text-lg;
   @apply tw-font-semibold;
-  @apply tw-text-gray-600;
+  @apply tw-text-white-600;
 }
 
 .carousel {
@@ -366,7 +366,7 @@
 
   /* all */
   @apply tw-relative;
-  @apply tw-bg-yellow-100;
+  @apply tw-bg-gray-100;
 
 }
 
@@ -867,6 +867,10 @@
   @apply tw-text-yellow-600;
 
   /* desktop */
+}
+
+.plans {
+  @apply tw-w-full;
 }
 
 .faq {

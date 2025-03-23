@@ -2,30 +2,32 @@
   <h1>Conheça mais sobre <span>Nossos Planos</span></h1>
   <div class="plans-list">
     <div class="list-item one js-play-on-screen">
-      <div class="content">
-        <div class="tag a">PLANO A</div>
-      </div>
-      <div class="prices">
-        <div class="old">
-          <div class="text">
-            <span class="coin">
-              R$
-            </span>
-            <span class="value">
-              47,90
-              por
-            </span>
+      <div class="priceAndButton">
+        <div class="content">
+          <div class="tag a">
+            <p>STARTER</p>
           </div>
-          <div class="line"></div>
+          <div class="prices">
+            <div class="old">
+              <div class="text">
+                <span class="value">
+                  R$47,90
+                  por
+                </span>
+              </div>
+              <div class="line"></div>
+            </div>
+            <div class="actual">
+              <div class="value">
+                R$34,99</div>
+              <div class="period">
+                /mês</div>
+            </div>
+          </div>
         </div>
-        <div class="actual">
-          <div class="coin">
-            R$</div>
-          <div class="value">
-            34,99</div>
-          <div class="period">
-            /mês</div>
-        </div>
+        <button class="btn-primary">
+          Assinar plano
+        </button>
       </div>
       <div class="benefits">
         <ul *ngIf="!showAllOne" class="list">
@@ -39,7 +41,6 @@
             <i class="bx bx-check-circle"></i>
             {{ benefit.text }}
           </li>
-
         </ul>
         <div class="show-more">
           <button (click)="showAllOne = !showAllOne" class="show-all-btn text">
@@ -55,35 +56,40 @@
           </button>
         </div>
       </div>
-      <button class="btn-primary">
-        Começar agora
-      </button>
     </div>
     <div class="list-item two js-play-on-screen">
-      <div class="content">
-        <div class="tag a">PLANO B</div>
-      </div>
-      <div class="prices two">
-        <div class="old two">
-          <div class="text two">
-            <span class="coin two">
-              R$
-            </span>
-            <span class="value two">
-              47,90
-              por
-            </span>
+      <div class="priceAndButton two">
+        <div class="content two">
+          <div class="tags">
+            <div class="tag a">
+              <p>PRO</p>
+            </div>
+            <div class="tag b">
+              <i class='bx bxs-hot'></i>
+              <p>Melhor escolha</p>
+            </div>
           </div>
-          <div class="line two"></div>
+          <div class="prices two">
+            <div class="old two">
+              <div class="text two">
+                <span class="value two">
+                  R$47,90
+                  por
+                </span>
+              </div>
+              <div class="line"></div>
+            </div>
+            <div class="actual">
+              <div class="value">
+                R$34,99</div>
+              <div class="period">
+                /mês</div>
+            </div>
+          </div>
         </div>
-        <div class="actual two">
-          <div class="coin two">
-            R$</div>
-          <div class="value two">
-            34,99</div>
-          <div class="period two">
-            /mês</div>
-        </div>
+        <button class="btn-primary two">
+          Assinar plano
+        </button>
       </div>
       <div class="benefits">
         <ul *ngIf="!showAllTwo" class="list two">
@@ -97,7 +103,6 @@
             <i class="bx bx-check-circle"></i>
             {{ benefit.text }}
           </li>
-
         </ul>
         <div class="show-more two">
           <button (click)="showAllTwo = !showAllTwo" class="show-all-btn text">
@@ -108,42 +113,38 @@
             <p *ngIf="!showAllTwo">
               Mostrar todos
               <i class='bx bx-chevron-down'></i>
-
-
             </p>
-
           </button>
         </div>
       </div>
-      <button class="btn-primary two">
-        Começar agora
-      </button>
     </div>
     <div class="list-item three js-play-on-screen">
-      <div class="content">
-        <div class="tag a">PLANO C</div>
-      </div>
-      <div class="prices">
-        <div class="old">
-          <div class="text">
-            <span class="coin">
-              R$
-            </span>
-            <span class="value">
-              47,90
-              por
-            </span>
+      <div class="priceAndButton">
+        <div class="content">
+          <div class="tag a">
+            <p>ENTERPRISE</p>
           </div>
-          <div class="line"></div>
+          <div class="prices">
+            <div class="old">
+              <div class="text">
+                <span class="value">
+                  R$47,90
+                  por
+                </span>
+              </div>
+              <div class="line"></div>
+            </div>
+            <div class="actual">
+              <div class="value">
+                R$34,99</div>
+              <div class="period">
+                /mês</div>
+            </div>
+          </div>
         </div>
-        <div class="actual">
-          <div class="coin">
-            R$</div>
-          <div class="value">
-            34,99</div>
-          <div class="period">
-            /mês</div>
-        </div>
+        <button class="btn-primary">
+          Assinar plano
+        </button>
       </div>
       <div class="benefits">
         <ul *ngIf="!showAllThree" class="list">
@@ -173,9 +174,6 @@
           </button>
         </div>
       </div>
-      <button class="btn-primary">
-        Começar agora
-      </button>
     </div>
   </div>
 </div>

@@ -4,12 +4,14 @@
   @apply tw-justify-center;
   @apply tw-items-center;
 
-  @apply tw-gap-20;
+  @apply tw-gap-10;
 
   @apply tw-w-full;
-  @apply tw-pt-40;
-  @apply tw-pb-16;
-  @apply tw-px-8;
+
+  @apply tw-mt-32;
+  @apply tw-py-16;
+
+  @apply tw-bg-gray-100;
 }
 
 .main h1 {
@@ -38,10 +40,17 @@
 }
 
 .main .plans-list {
+  @apply tw-container;
+  @apply tw-px-6;
+
+  /* desktop */
+  @apply md:tw-px-20;
+
+  /* all */
   @apply tw-flex;
   @apply tw-justify-center;
   @apply tw-flex-wrap;
-  @apply tw-items-center;
+  @apply tw-items-start;
 
   @apply tw-gap-8;
 
@@ -49,23 +58,19 @@
 }
 
 .list-item {
-  @apply tw-relative;
-
   @apply tw-flex;
   @apply tw-flex-col;
   @apply tw-justify-center;
   @apply tw-items-center;
 
   @apply tw-w-fit;
-  @apply tw-pt-14;
-  @apply tw-pb-8;
-  @apply tw-px-8;
 
-  @apply tw-bg-white-50;
+  @apply tw-bg-gray-50;
 
   @apply tw-shadow-md;
-  @apply tw-rounded-3xl;
+  @apply tw-rounded-xl;
 
+  @apply tw-max-w-96;
 
   @apply tw-gap-8;
 
@@ -83,36 +88,76 @@
 
 }
 
+.priceAndButton {
+  @apply tw-p-4;
+
+  @apply tw-shadow-lg;
+
+  @apply tw-rounded-2xl;
+
+  @apply tw-w-full;
+
+  @apply tw-bg-white-50;
+}
+
 .list-item .content {
-  @apply tw-top-[-32px];
-  @apply tw-absolute;
-  @apply tw-px-16;
+  @apply tw-px-4;
   @apply tw-py-4;
 
+  @apply tw-mb-4;
+
   @apply tw-justify-center;
-  @apply tw-items-center;
+  @apply tw-items-start;
 
   @apply tw-bg-white-100;
-  @apply tw-rounded-3xl;
+  @apply tw-rounded-xl;
+}
+
+.list-item .content.two {
+  @apply tw-bg-white-50;
+}
+
+.tags {
+  @apply tw-flex;
+  @apply tw-justify-between;
+  @apply tw-items-center;
+  @apply tw-gap-2;
 }
 
 .tag {
-  @apply tw-text-center;
-  @apply tw-text-2xl;
+  @apply tw-px-4;
+  @apply tw-py-1;
+
+  @apply tw-mb-4;
+
+  @apply tw-text-base;
   @apply tw-font-semibold;
+
+  @apply tw-w-fit;
+
+  @apply tw-rounded-full;
+  @apply tw-bg-white-200;
 }
 
-.tag.a {
-  @apply tw-text-white-500;
+.tag.b {
+  @apply tw-flex;
+  @apply tw-justify-center;
+  @apply tw-items-center;
+  @apply tw-gap-2;
+
+  @apply tw-bg-gradient-to-tl;
+  @apply tw-from-gray-900;
+  @apply tw-to-gray-700;
+
+  @apply tw-text-white-50;
 }
 
 .prices {
   @apply tw-flex;
   @apply tw-flex-col;
   @apply tw-justify-center;
-  @apply tw-items-center;
+  @apply tw-items-start;
   @apply tw-gap-1;
-  @apply tw-px-8;
 }
 
 .prices .old {
@@ -122,25 +167,21 @@
 }
 
 .prices .old .coin {
-  color: #FF699B;
+  @apply tw-text-white-300;
   @apply tw-text-base;
   word-wrap: break-word
 }
 
 .prices .old .value {
-  color: #FF699B;
-  font-size: 28px;
-  font-family: Poppins;
-  font-weight: 600;
-  line-height: 42px;
-  word-wrap: break-word
+  @apply tw-text-white-300;
+  @apply tw-text-2xl;
 }
 
 .line {
   @apply tw-absolute;
   @apply tw-w-[124px];
   @apply tw-h-[2px];
-  @apply tw-bg-[#FF699B];
+  @apply tw-bg-white-300;
 }
 
 .prices .actual {
@@ -203,10 +244,12 @@
 }
 
 .show-more {
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  display: inline-flex
+  @apply tw-flex;
+  @apply tw-justify-center;
+  @apply tw-items-center;
+  @apply tw-gap-8;
+
+  @apply tw-mb-6;
 }
 
 .show-more .text p {
@@ -215,7 +258,7 @@
   @apply tw-items-center;
   @apply tw-gap-2;
 
-  @apply tw-text-pink-500;
+  @apply tw-text-gray-700;
   @apply tw-font-semibold;
   @apply tw-cursor-pointer;
 
@@ -284,50 +327,34 @@
   }
 }
 
+.priceAndButton.two {
+  background: linear-gradient(0deg, #ED116A 0%, #ff5090 100%);
+  @apply tw-shadow-xl;
+}
+
 .prices .old .coin.two {
-  color: #FF699B;
+  @apply tw-text-white-300;
   @apply tw-text-base;
-  word-wrap: break-word
 }
 
 .prices .old .value.two {
-  @apply tw-text-[#FF699B];
-  @apply tw-text-3xl;
-  @apply tw-font-semibold;
+  @apply tw-text-white-300;
+  @apply tw-text-2xl;
 }
 
 .line.two {
   @apply tw-absolute;
   @apply tw-w-[124px];
   @apply tw-h-[2px];
-  @apply tw-bg-[#FF699B];
-}
-
-.prices .actual .coin.two {
-  @apply tw-text-center;
-  @apply tw-text-white-50;
-  @apply tw-text-2xl;
-}
-
-.prices .actual .value.two {
-  @apply tw-text-center;
-  @apply tw-text-white-50;
-  @apply tw-font-semibold;
-  @apply tw-text-5xl;
-}
-
-.period.two {
-  @apply tw-text-center;
-  @apply tw-text-white-50;
-  @apply tw-text-xl;
+  @apply tw-bg-white-300;
 }
 
 .benefits .list.two {
-  @apply tw-text-white-100;
+  @apply tw-text-pink-800;
 }
 
 .benefits .list.two i {
-  @apply tw-text-white-50;
+  @apply tw-text-pink-500;
   @apply tw-text-2xl;
 }
 
@@ -338,9 +365,9 @@
 }
 
 .show-more.two .text p {
-  @apply tw-text-white-50;
+  @apply tw-text-pink-500;
 }
 
 .list-item.two {
-  background: linear-gradient(0deg, #8F0C4D 0%, #FF005C 100%);
+  @apply tw-bg-gray-50;
 }

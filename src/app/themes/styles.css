@@ -6,6 +6,16 @@
 @import "~primeng/resources/primeng.min.css";
 @import "~primeicons/primeicons.css";
 
+:root {
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme:dark) {
+  :root {
+    color-scheme: light !important;
+  }
+}
+
 body {
   @apply tw-font-sans;
   font-family: 'Poppins', sans-serif;
