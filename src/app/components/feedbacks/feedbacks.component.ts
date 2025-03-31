@@ -10,7 +10,7 @@ export class FeedbacksComponent implements OnInit {
   ngOnInit() {
 
     if (typeof document !== 'undefined') {
-      document.addEventListener('DOMContentLoaded', function() {
+      document.addEventListener('DOMContentLoaded', function () {
         const carouselTrack = document.querySelector('.carousel-track');
         if (carouselTrack) {
           const clone = carouselTrack.innerHTML;

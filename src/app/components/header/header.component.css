@@ -1,0 +1,104 @@
+.background {
+  /* Responsive */
+  @apply tw-max-w-[1100px];
+  @apply tw-top-[0px];
+
+  /* Desktop */
+  @apply md:tw-max-w-[2000px];
+
+  /* all */
+  @apply md:tw-top-[-200px];
+  @apply tw-absolute;
+}
+
+.header {
+  /* All */
+  @apply tw-w-full;
+  @apply tw-h-[100vh];
+
+  @apply tw-flex;
+
+  @apply tw-overflow-hidden;
+
+  @apply tw-justify-center;
+  @apply tw-items-center;
+
+  @apply tw-relative;
+}
+
+.content {
+  /* Responsive */
+
+  /* Desktop */
+
+  /* All */
+  @apply tw-w-full;
+  @apply tw-container;
+  @apply tw-mx-auto;
+  @apply tw-flex;
+  @apply tw-justify-between;
+  @apply tw-items-center;
+}
+
+.title-and-subtitle {
+  @apply tw-flex;
+  @apply tw-flex-col;
+  @apply tw-items-start;
+  @apply tw-justify-start;
+
+  @apply tw-gap-4;
+
+  opacity: 0;
+
+  animation: fadeIn 0.4s ease-out;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+  animation-delay: 100ms;
+
+  /* responsive */
+  @media screen and (min-width: 768px) {
+    animation: fadeIn 0.7s ease-out;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+  }
+}
+
+.header .title-and-subtitle .first-phrase {
+  /* responsive */
+  @apply tw-text-lg;
+  @apply tw-font-bold;
+  @apply tw-text-gray-900;
+
+  /* desktop */
+  @apply md:tw-text-4xl;
+
+  /* all */
+  @apply tw-items-start;
+  @apply tw-justify-center;
+  @apply tw-text-left;
+}
+
+.header .title-and-subtitle .first-phrase .effect-phrase {
+  /* responsive */
+  @apply tw-text-5xl;
+
+  /* desktop */
+  @apply md:tw-text-7xl;
+
+  /* all */
+  @apply tw-text-left;
+  @apply tw-text-pink-500;
+}
+
+.header .title-and-subtitle .first-phrase .effect-phrase .dot {
+  @apply tw-text-black;
+}
+
+.header .title-and-subtitle .subtitle {
+  /* responsive */
+  @apply tw-text-center;
+
+  /* all */
+  @apply tw-text-lg;
+  @apply tw-text-gray-700;
+}

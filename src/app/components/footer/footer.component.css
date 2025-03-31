@@ -42,6 +42,7 @@
 
   /* All */
   @apply tw-w-full;
+  @apply tw-container;
   @apply tw-flex;
   @apply tw-items-start;
 }
@@ -115,6 +116,7 @@
 
   /* All */
   @apply tw-flex;
+  @apply tw-container;
   @apply tw-w-full;
   @apply tw-text-center;
   @apply tw-justify-between;

@@ -3,8 +3,6 @@
   @apply tw-py-4;
   @apply tw-px-8;
 
-
-
   /* Desktop */
   @apply md:tw-px-16;
   @apply md:tw-px-16;
@@ -40,16 +38,15 @@
 
 .list {
   @apply tw-hidden;
+  @apply tw-gap-4;
 
   /* Desktop */
-  @apply lg:tw-w-[20%];
+  @apply lg:tw-w-[30%];
   @apply xl:tw-flex;
   @apply lg:tw-items-center;
   @apply lg:tw-justify-between;
-  @apply lg:tw-gap-16;
 
   /* All */
-  @apply tw-gap-4;
 }
 
 .list-item {
@@ -59,7 +56,6 @@
   @apply tw-ease-in-out;
 
   @apply tw-text-white-400;
-  @apply tw-font-semibold;
 
   @apply hover:tw-text-white-950;
 }

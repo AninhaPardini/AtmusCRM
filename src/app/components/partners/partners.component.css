@@ -1,0 +1,42 @@
+.partners {
+  @apply tw-flex;
+  @apply tw-flex-col;
+  @apply tw-items-center;
+  @apply tw-justify-center;
+  @apply tw-gap-16;
+  @apply tw-py-12;
+}
+
+.active {
+  @apply tw-opacity-100;
+  @apply tw-transform;
+  @apply tw-translate-x-0;
+  @apply tw-transition-all;
+  @apply tw-duration-500;
+  @apply tw-ease-in-out;
+}
+
+.partners h2 {
+  @apply tw-text-lg;
+  @apply tw-font-semibold;
+  @apply tw-text-white-600;
+}
+
+.carousel {
+  @apply tw-overflow-hidden;
+  @apply tw-relative;
+  @apply tw-w-full;
+  @apply tw-h-20;
+}
+
+.carousel-track {
+  @apply tw-flex;
+  @apply tw-gap-8;
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  @apply tw-w-[164px];
+  @apply tw-mr-5;
+  transition: transform 0.5s ease-in-out;
+}

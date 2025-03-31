@@ -5,12 +5,14 @@ import { SevendaystestComponent } from "../../components/sevendaystest/sevendays
 import throttle from 'lodash/throttle';
 import { FaqComponent } from "../../components/faq/faq.component";
 import { PlansComponent } from "../../components/plans/plans.component";
+import { HeaderComponent } from "../../components/header/header.component";
+import { PartnersComponent } from "../../components/partners/partners.component";
 
 @Component({
   selector: 'atm-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
-  imports: [IntegrationsComponent, FeedbacksComponent, SevendaystestComponent, FaqComponent, PlansComponent]
+  imports: [FeedbacksComponent, SevendaystestComponent, FaqComponent, PlansComponent, HeaderComponent, PartnersComponent]
 })
 
 export class HomeComponent implements OnInit, OnDestroy {

@@ -22,11 +22,13 @@
 
 .example {
   /* responsive */
-  @apply tw-max-w-[464px];
+  /*   @apply tw-max-w-[464px]; */
   @apply tw-w-full;
 
   /* desktop */
-  @apply md:tw-max-w-[80%];
+  @apply md:tw-w-[740px];
+  @apply md:tw-max-w-[740px];
+  @apply md:tw-h-[600px];
 
   /* all */
   @apply tw-bg-cover;
@@ -138,23 +140,6 @@
   @apply tw-filter;
   @apply tw-grayscale-0;
   @apply tw-opacity-100;
-}
-
-.integration-item:hover img {
-  /* responsive */
-  @apply tw-w-12;
-
-  /* Desktop */
-  @apply md:tw-w-full;
-  @apply md:tw-max-w-12;
-}
-
-.integration-item:hover i {
-  /* Responsive */
-  @apply tw-text-6xl;
-
-  /* Desktop */
-  @apply md:tw-text-7xl;
 }
 
 .integration-item i {
